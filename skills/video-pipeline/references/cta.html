@@ -1,0 +1,97 @@
+<!--
+  Shared CTA outro card for all 100x Marketer short-form videos.
+
+  Edit this file once; every future render picks up the change automatically.
+
+  How it gets used: the video-pipeline skill copies (or includes via
+  data-composition-src) this file into the per-video project as
+  compositions/cta.html. The parent timeline schedules it with its own
+  data-start, so the data-start here is provided by the parent.
+
+  Brand colors come from /brand/COLORS.md:
+    --brand-black:  #0a0a0a
+    --brand-green:  #39ff14
+    --brand-white:  #ffffff
+
+  Hold duration: 4-6 seconds (parent's data-duration controls this).
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    :root {
+      --brand-black: #0a0a0a;
+      --brand-green: #39ff14;
+      --brand-white: #ffffff;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 1080px;
+      height: 1920px;
+      background: var(--brand-black);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+    }
+
+    .cta-root {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 80px;
+      box-sizing: border-box;
+    }
+
+    .brand-mark {
+      font-size: 144px;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--brand-green);
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--brand-white);
+      margin-top: 56px;
+      line-height: 1.15;
+    }
+
+    .handle {
+      font-size: 44px;
+      font-weight: 700;
+      color: var(--brand-green);
+      margin-top: 32px;
+      font-family: 'JetBrains Mono', 'Menlo', monospace;
+    }
+  </style>
+</head>
+<body>
+  <div
+    id="cta-card"
+    class="clip cta-root"
+    data-start="0"
+    data-duration="5"
+    data-track-index="10"
+  >
+    <div class="brand-mark">100x Marketer</div>
+    <div class="tagline">Free in the community.<br/>Link in bio.</div>
+    <div class="handle">@100xmarketer</div>
+  </div>
+
+  <script>
+    // Register a paused timeline per HyperFrames convention.
+    window.__timelines = window.__timelines || {};
+    window.__timelines["cta-card"] = (typeof gsap !== "undefined")
+      ? gsap.timeline({ paused: true })
+      : null;
+  </script>
+</body>
+</html>
