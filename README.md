@@ -30,15 +30,20 @@ Short-form (TikTok, Reels, Shorts, X) → Free Skool → Paid Skool ($79/mo) →
 - `content/` — Short-form scripts, long-form scripts, newsletters, captions
 - `assets/` — Logos, thumbnails, templates
 
+## Quickstart
+
+**New here?** Run the [10-Minute First Win](quickstart/README.md). You'll install Claude Code, drop in a starter Brief, and ship a real campaign brief in under 10 minutes. No coding.
+
 ## Phase 0 Status
 
 - [x] Project scaffolding
 - [x] Brand voice doc
 - [x] Teaching methodology
+- [x] Canonical CLAUDE.md template
+- [x] 10-minute first-win install flow
+- [x] First skill: `campaign-brief`
 - [ ] Lock handles (Brendan)
 - [ ] Stand up Skool (Brendan)
-- [ ] Canonical CLAUDE.md for marketers
-- [ ] Install doc ("10-minute first win")
-- [ ] 3 hero skills built
+- [ ] 2 more hero skills (`report-monday`, `partnership-outreach`)
 - [ ] Manifesto video script
 - [ ] Landing page copy
