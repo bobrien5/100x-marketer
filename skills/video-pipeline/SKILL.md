@@ -125,13 +125,15 @@ The `hyperframes` skill knows the framework's rules:
 These are non-negotiable. The `hyperframes` skill's output must respect all of them:
 
 1. **Cold open.** No fade-in on beat 1. First frame is the hook.
-2. **Hook in 3 seconds.** First beat shows the result, the artifact, or the on-screen text claim. NOT a face.
-3. **Visual change every 8 seconds maximum.** Per `TEACHING_METHOD.md`. Default cadence: 1.5-3s on screen recording, 3-6s on A-roll talking head.
-4. **Pause-and-copy holds.** Any prompt or config block on screen holds for at least 2.5 seconds, with a "Pause. Copy this." overlay (use `--brand-green` for the cue).
-5. **Captions throughout.** Word-by-word from `transcript.json`. White (`--brand-white`) with 4-6px black stroke. Bottom-center. Never overlapping headline overlays (move to top-third on those beats if needed).
-6. **CTA card outro.** 4-6 second hold using `compositions/cta.html`. Same card every video.
-7. **Brand colors only.** All text and overlays use tokens from `brand/COLORS.md`. No hard-coded hex except the ones in COLORS.md.
-8. **No music.** v1 ships music-less. Audio track is the VO only.
+2. **Hook in 1.5 seconds (Sabrina spine).** Big on-screen text headline must be readable before Instagram's caption overlay renders. NOT a talking-head intro. The 3-second rule is a fallback, not the target.
+3. **Fast cadence by default.** Sabrina-spine: 1-1.5s on screen recordings, 2s on A-roll, sub-second on rapid value beats. Slower holds (1.5-2s on prompts) are used intentionally, not by default. The 8-second-maximum from `TEACHING_METHOD.md` is the floor; we routinely beat it.
+4. **Pause-and-copy holds.** Any prompt or config block on screen holds for 1.5-2 seconds AND is rendered as an on-screen text overlay so viewers can pause and read. Use `--brand-green` highlight for the cue. (Sabrina's holds are shorter than @mavgpt's because the prompt is also rendered as text.)
+5. **On-screen headline runs the entire video.** Top-third. Updates at major beat changes (every 5-7s), but never empty. Brand colors.
+6. **Captions throughout.** Word-by-word from `transcript.json`. White (`--brand-white`) with 4-6px black stroke. Bottom-center. Never overlapping the headline overlay.
+7. **Target duration 25-30s.** Stretch to 45-50s only when the brief explicitly demands it, and stretch by adding beats, never by slowing the cadence.
+8. **CTA card outro.** 4-5 second hold using `compositions/cta.html`. Same card every video.
+9. **Brand colors only.** All text and overlays use tokens from `brand/COLORS.md`. No hard-coded hex except the ones in COLORS.md.
+10. **No music.** v1 ships music-less. Audio track is the VO only.
 
 ## Phase 6, Lint + Auto-Render
 

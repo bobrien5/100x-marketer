@@ -32,12 +32,13 @@ Creators and brands teaching AI / automation / Claude / agents to marketers, ope
 
 These are short-form-native creators whose hook structure, edit pacing, and on-screen text we study. They are not direct business competitors. They are the bar for execution.
 
-- **@mrsocialgrowthstudio_** (Instagram, TikTok)
-- **@jen.heitmann** (Instagram, TikTok)
-- **@mavgpt** (Instagram, TikTok, X)
-- **@kylewhitrow** (Instagram, TikTok)
+- **@sabrina_ramonov** (Instagram, TikTok, YouTube) — **PRIMARY reference.** 1.5M+ followers solo, 500M+ views, AI/marketing niche. The gold standard for the type of video 100x Marketer should produce.
+- **@kylewhitrow** (Instagram, TikTok) — supporting reference for Claude Code / Receipt-style beats
+- **@mavgpt** (Instagram, TikTok, X) — supporting reference for Playbook / prompt-teaching beats
+- **@mrsocialgrowthstudio_** (Instagram, TikTok) — reserved for the future carousel skill
+- **@jen.heitmann** (Instagram, TikTok) — handle TBD; add when verified
 
-When researching, search each handle on Instagram and TikTok and pull their last 14 days of posts. Note the hook (first 3 seconds), on-screen text style, edit pacing, and CTA pattern.
+When researching, search each handle and pull their last 14 days of posts. Note the hook (first 1.5 seconds for Sabrina, 3 seconds otherwise), on-screen text style, edit pacing, and CTA pattern. Detailed style notes live in `skills/video-editor/references/style-references.md`.
 
 ---
 
