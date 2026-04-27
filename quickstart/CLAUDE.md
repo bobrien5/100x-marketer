@@ -60,7 +60,8 @@ Direct. Operator energy. Specific over clever. Receipts over hype. We sound like
 
 I have skills installed at `./skills/`. The ones available right now:
 
-- `campaign-brief` — turns a one-line campaign idea into a full campaign brief
+- `campaign-brief`, turns a one-line campaign idea into a full campaign brief
+- `content-strategist`, scans competitors and trending content, then pitches ready-to-ship content briefs (reads `skills/content-strategist/references/brand-profile.md`)
 
 When I name a skill or describe a job that matches one, run it.
 
