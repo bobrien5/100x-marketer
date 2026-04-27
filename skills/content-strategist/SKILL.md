@@ -89,8 +89,18 @@ Every brief must satisfy ALL of the following. If a brief fails any rule, do not
 1. **Teaches exactly one idea.** Pick one of: a Brief concept, a Tool Belt concept, a Playbook concept, a Guardrails concept, or a single receipt (replaced-this-with-that, cut-this-from-X-to-Y). Not two ideas. One.
 2. **Demo-first.** First 0-3 seconds of the video must show the result, the artifact, or the screen, not a talking head intro. State this explicitly in the brief.
 3. **Specific over clever.** Names a tool, a price, a number, or an exact prompt within the first 6 words of the caption.
-4. **Voice-compliant.** Zero em dashes, zero banned words from `brand/BRAND_VOICE.md`. Sentence rhythm varies (short, then medium, then short). Run the BRAND_VOICE.md "smell test" mentally before presenting.
+4. **Voice-compliant.** Zero em dashes, zero banned words from `brand/BRAND_VOICE.md`. Run the BRAND_VOICE.md "smell test" mentally before presenting.
 5. **One CTA.** Default: "Free in the 100x Marketer community. Link in bio." Vary only when the brief calls for a different ask (e.g., "Comment 'skill' and I'll DM you the prompt.").
+
+### Spoken-script realism rules (do not skip)
+
+The spoken script is where briefs go wrong. The default failure mode is "AI script that sounds like a hook compilation." Apply these rules to every spoken script:
+
+- **Conversational length, not chopped.** Real talk has connective tissue: "because," "and then," "the reason." A 20-word sentence with a small aside is fine and often more human than three 4-word sentences in a row. Vary length for real, not formulaically. Do not weaponize the BRAND_VOICE.md short-then-medium-then-short rule into a chain of 4-word sentences.
+- **No catchphrase closes.** Do not write lines like "That's vibe marketing. Not vibes." or "Three briefs. One Monday saved." or "Cut from 3 hours to 11 minutes" as standalone closes. They sound robotic. Default close: a normal-sounding sentence about what was built and where to grab it.
+- **First-person reasoning beats declaration.** "I used to spend three hours on this in a Google Doc" reads better than "Cut from 3 hours to 11 minutes." Numbers are good. Wrap them in a sentence a person would actually say.
+- **"Vibe marketing" is rationed.** It is the brand's umbrella term, but the work demonstrates it. Mention it at most once across all briefs in a single Phase 2 session. Not once per script. If you used it twice, cut one. The audience learns the meaning by watching the workflows, not by hearing the phrase repeated.
+- **Read the script out loud (in your head).** If a line could only be delivered by reading a teleprompter, rewrite it. If it would feel awkward to say to a peer at a marketing meetup, cut it.
 
 ### Brief format
 
