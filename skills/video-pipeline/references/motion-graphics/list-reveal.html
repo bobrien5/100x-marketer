@@ -1,0 +1,63 @@
+<!--
+Motion graphic: Numbered list with stagger reveal
+Use case: the 4 mental models (Brief / Tool Belt / Playbook / Guardrails), or any 3-5 item list
+Slot: top-strip (1080x760) or full-frame, data-track-index=7
+Duration: 4-8s recommended (1s stagger × N items + 2s hold)
+Customize: change the items array
+-->
+<style>
+  .mg-list {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1080px;
+    height: 760px;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 28px;
+  }
+  .mg-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  .mg-list-item:nth-child(1) { animation: mg-list-in 0.5s 0.2s forwards; }
+  .mg-list-item:nth-child(2) { animation: mg-list-in 0.5s 1.0s forwards; }
+  .mg-list-item:nth-child(3) { animation: mg-list-in 0.5s 1.8s forwards; }
+  .mg-list-item:nth-child(4) { animation: mg-list-in 0.5s 2.6s forwards; }
+  .mg-list-item:nth-child(5) { animation: mg-list-in 0.5s 3.4s forwards; }
+  @keyframes mg-list-in {
+    0%   { opacity: 0; transform: translateX(-40px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  .mg-list-num {
+    font-family: 'JetBrains Mono', 'Menlo', monospace;
+    font-size: 100px;
+    font-weight: 900;
+    color: #ff6b00;
+    line-height: 1;
+    width: 110px;
+    text-align: right;
+  }
+  .mg-list-text {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 76px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+</style>
+<div class="clip mg-list" data-start="0" data-duration="6.0" data-track-index="7" style="z-index: 7">
+  <div class="mg-list-item"><div class="mg-list-num">1</div><div class="mg-list-text">The Brief</div></div>
+  <div class="mg-list-item"><div class="mg-list-num">2</div><div class="mg-list-text">The Tool Belt</div></div>
+  <div class="mg-list-item"><div class="mg-list-num">3</div><div class="mg-list-text">The Playbook</div></div>
+  <div class="mg-list-item"><div class="mg-list-num">4</div><div class="mg-list-text">The Guardrails</div></div>
+</div>

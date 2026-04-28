@@ -1,0 +1,96 @@
+<!--
+Motion graphic: Big number counter
+Use case: reveal a single number ("11 MINUTES", "42 POSTS", "$400/mo")
+Slot: top-strip (1080x760), data-track-index=7
+Duration: 2-3s recommended
+Customize: change the value in NUMBER and label in UNIT
+-->
+<style>
+  .mg-counter {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1080px;
+    height: 760px;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .mg-counter-stack {
+    position: relative;
+    height: 380px;
+    width: 600px;
+  }
+  .mg-counter-stack .n {
+    position: absolute;
+    inset: 0;
+    font-family: 'JetBrains Mono', 'Menlo', 'Courier New', monospace;
+    font-size: 360px;
+    font-weight: 900;
+    color: #ff6b00;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    text-shadow: 0 0 60px rgba(255, 107, 0, 0.4);
+  }
+  .mg-counter-stack .n:nth-child(1)  { animation: mg-counter-flash 0.08s 0.00s forwards; }
+  .mg-counter-stack .n:nth-child(2)  { animation: mg-counter-flash 0.08s 0.08s forwards; }
+  .mg-counter-stack .n:nth-child(3)  { animation: mg-counter-flash 0.08s 0.16s forwards; }
+  .mg-counter-stack .n:nth-child(4)  { animation: mg-counter-flash 0.08s 0.24s forwards; }
+  .mg-counter-stack .n:nth-child(5)  { animation: mg-counter-flash 0.08s 0.32s forwards; }
+  .mg-counter-stack .n:nth-child(6)  { animation: mg-counter-flash 0.08s 0.40s forwards; }
+  .mg-counter-stack .n:nth-child(7)  { animation: mg-counter-flash 0.08s 0.48s forwards; }
+  .mg-counter-stack .n:nth-child(8)  { animation: mg-counter-flash 0.08s 0.56s forwards; }
+  .mg-counter-stack .n:nth-child(9)  { animation: mg-counter-flash 0.08s 0.64s forwards; }
+  .mg-counter-stack .n:nth-child(10) { animation: mg-counter-flash 0.08s 0.72s forwards; }
+  .mg-counter-stack .n:nth-child(11) { animation: mg-counter-flash 0.08s 0.80s forwards; }
+  .mg-counter-stack .n.n-final {
+    animation: mg-counter-final 1.5s 0.88s forwards;
+  }
+  @keyframes mg-counter-flash {
+    0%, 99% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  @keyframes mg-counter-final {
+    0%   { opacity: 0; transform: scale(0.7); }
+    20%  { opacity: 1; transform: scale(1.18); }
+    35%  { transform: scale(1); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  .mg-counter-unit {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 12px;
+    margin-top: 24px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: mg-counter-unit-in 0.4s 1.0s forwards;
+  }
+  @keyframes mg-counter-unit-in {
+    0%   { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+</style>
+<div class="clip mg-counter" data-start="0" data-duration="2.5" data-track-index="7" style="z-index: 7">
+  <div class="mg-counter-stack">
+    <span class="n">0</span>
+    <span class="n">1</span>
+    <span class="n">2</span>
+    <span class="n">3</span>
+    <span class="n">4</span>
+    <span class="n">5</span>
+    <span class="n">6</span>
+    <span class="n">7</span>
+    <span class="n">8</span>
+    <span class="n">9</span>
+    <span class="n">10</span>
+    <span class="n n-final">11</span>
+  </div>
+  <div class="mg-counter-unit">MINUTES</div>
+</div>

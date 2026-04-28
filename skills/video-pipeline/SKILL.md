@@ -227,7 +227,7 @@ Hyperframes-compliant composition. Hard requirements (every one is enforced by l
 - **Headlines (top-third green)**: REMOVED from the default. Sabrina doesn't use them. Add only if the brief explicitly demands.
 - **CTA**: NONE in the rendered video by default. Brendan adds CTAs natively in IG/TikTok caption + first comment after posting. The full-screen CTA card and Sabrina-style chat bubble both got cut. If a brief explicitly demands an in-video CTA, use the small native-style chat bubble (top of frame, NOT full screen).
 
-### B-roll placeholder pattern
+### B-roll placeholder pattern (default for unrecorded slots)
 
 ```html
 <div class="clip broll-strip" data-start="<t>" data-duration="<d>" data-track-index="7" style="z-index: 7">
@@ -235,6 +235,24 @@ Hyperframes-compliant composition. Hard requirements (every one is enforced by l
   <div>{shot description: what to record, ~Xs}</div>
 </div>
 ```
+
+### Motion graphics (premium placeholder, used when the b-roll concept is abstract)
+
+For abstract beats where real footage is hard to film (numbers, comparisons, lists), use motion graphics from `skills/video-pipeline/references/motion-graphics/`. They sit in the same top-strip slot as B-roll placeholders, look polished from frame 1, and can be replaced with real footage later if Brendan records it.
+
+| Component | When to use |
+|---|---|
+| `counter.html` | Big number reveal: "11 MINUTES", "42 POSTS", "$400/mo cancelled" |
+| `before-after.html` | Two-state comparison: "3 HOURS → 11 MIN", "$400 → $0" |
+| `list-reveal.html` | Numbered list reveal: the 4 mental models (Brief / Tool Belt / Playbook / Guardrails) |
+| `pulse-callout.html` | Glowing accent over A-roll: highlight a specific word like "FREE" during the closer |
+
+Inline the component's `<style>` block + `<div>` block into `index.html`, set `data-start`/`data-duration` to match the beat, customize the displayed values. All components are pure CSS keyframes (no JS, deterministic, render-safe).
+
+Default decision rule per beat:
+- **Number-driven beat** ("11 minutes," "42 posts") → counter or before-after
+- **Concept-listing beat** ("4 things every Claude setup needs") → list-reveal
+- **Generic skill demo / screen recording** → leave as `broll-strip` placeholder, Brendan replaces with real footage
 
 CSS:
 ```css

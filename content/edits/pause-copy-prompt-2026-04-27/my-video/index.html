@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Pause Copy Prompt — 100x Marketer</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <style>
+    :root {
+      --brand-black: #0a0a0a;
+      --brand-orange: #ff6b00;
+      --brand-white: #ffffff;
+    }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--brand-black);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+    }
+    #root {
+      position: relative;
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      background: var(--brand-black);
+    }
+    .clip { position: absolute; inset: 0; }
+    video { width: 100%; height: 100%; object-fit: cover; }
+
+    /* Captions: smaller (80px Sabrina-match), orange + black stroke, lower-mid */
+    .caption {
+      position: absolute;
+      top: 1500px;
+      left: 60px;
+      right: 60px;
+      font-size: 80px;
+      font-weight: 900;
+      color: var(--brand-orange);
+      -webkit-text-stroke: 6px #000;
+      text-stroke: 6px #000;
+      letter-spacing: -0.01em;
+      text-align: center;
+      text-transform: uppercase;
+      paint-order: stroke fill;
+    }
+
+    /* B-roll top strips */
+    .broll-strip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1080px;
+      height: 760px;
+      background: rgba(10, 10, 10, 0.95);
+      border-bottom: 6px dashed var(--brand-orange);
+      color: var(--brand-orange);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+      box-sizing: border-box;
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .broll-strip .label {
+      color: var(--brand-white);
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    /* === MOTION GRAPHICS: counter (11 minutes) === */
+    .mg-counter {
+      position: absolute; top: 0; left: 0;
+      width: 1080px; height: 760px;
+      background: #0a0a0a;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      overflow: hidden;
+    }
+    .mg-counter-stack { position: relative; height: 380px; width: 600px; }
+    .mg-counter-stack .n {
+      position: absolute; inset: 0;
+      font-family: 'JetBrains Mono', 'Menlo', 'Courier New', monospace;
+      font-size: 360px; font-weight: 900; color: #ff6b00; line-height: 1;
+      display: flex; justify-content: center; align-items: center;
+      opacity: 0;
+      text-shadow: 0 0 60px rgba(255, 107, 0, 0.4);
+    }
+    .mg-counter-stack .n:nth-child(1)  { animation: mg-counter-flash 0.06s 0.00s forwards; }
+    .mg-counter-stack .n:nth-child(2)  { animation: mg-counter-flash 0.06s 0.06s forwards; }
+    .mg-counter-stack .n:nth-child(3)  { animation: mg-counter-flash 0.06s 0.12s forwards; }
+    .mg-counter-stack .n:nth-child(4)  { animation: mg-counter-flash 0.06s 0.18s forwards; }
+    .mg-counter-stack .n:nth-child(5)  { animation: mg-counter-flash 0.06s 0.24s forwards; }
+    .mg-counter-stack .n:nth-child(6)  { animation: mg-counter-flash 0.06s 0.30s forwards; }
+    .mg-counter-stack .n:nth-child(7)  { animation: mg-counter-flash 0.06s 0.36s forwards; }
+    .mg-counter-stack .n:nth-child(8)  { animation: mg-counter-flash 0.06s 0.42s forwards; }
+    .mg-counter-stack .n:nth-child(9)  { animation: mg-counter-flash 0.06s 0.48s forwards; }
+    .mg-counter-stack .n:nth-child(10) { animation: mg-counter-flash 0.06s 0.54s forwards; }
+    .mg-counter-stack .n:nth-child(11) { animation: mg-counter-flash 0.06s 0.60s forwards; }
+    .mg-counter-stack .n.n-final { animation: mg-counter-final 1.6s 0.66s forwards; }
+    @keyframes mg-counter-flash { 0%, 99% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes mg-counter-final {
+      0%   { opacity: 0; transform: scale(0.7); }
+      20%  { opacity: 1; transform: scale(1.18); }
+      35%  { transform: scale(1); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .mg-counter-unit {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 80px; font-weight: 800; color: #fff;
+      letter-spacing: 12px; margin-top: 24px; opacity: 0;
+      transform: translateY(20px);
+      animation: mg-counter-unit-in 0.4s 0.8s forwards;
+    }
+    @keyframes mg-counter-unit-in {
+      0%   { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === MOTION GRAPHICS: before/after (3h -> 11min) === */
+    .mg-ba {
+      position: absolute; top: 0; left: 0;
+      width: 1080px; height: 760px; background: #0a0a0a;
+      display: flex; flex-direction: row;
+      justify-content: center; align-items: center;
+      gap: 60px; padding: 0 60px; box-sizing: border-box; overflow: hidden;
+    }
+    .mg-ba-side {
+      flex: 1; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+    }
+    .mg-ba-label {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 34px; font-weight: 700; color: #666;
+      letter-spacing: 6px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .mg-ba-value {
+      font-family: 'JetBrains Mono', 'Menlo', monospace;
+      font-weight: 900; line-height: 1;
+    }
+    .mg-ba-unit {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 38px; font-weight: 800; color: #fff;
+      letter-spacing: 8px; margin-top: 14px; text-transform: uppercase;
+    }
+    .mg-ba-before { opacity: 0; animation: mg-ba-before-in 0.4s 0.0s forwards; }
+    .mg-ba-before .mg-ba-value { font-size: 220px; color: #888; position: relative; }
+    .mg-ba-before .mg-ba-value::after {
+      content: ''; position: absolute; top: 50%; left: 0;
+      width: 0%; height: 12px; background: #ff6b00;
+      transform: translateY(-50%);
+      animation: mg-ba-strike 0.4s 1.5s forwards;
+    }
+    @keyframes mg-ba-before-in {
+      0%   { opacity: 0; transform: translateX(-30px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes mg-ba-strike { 0% { width: 0%; } 100% { width: 105%; } }
+    .mg-ba-arrow {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 140px; font-weight: 900; color: #ff6b00;
+      line-height: 1; opacity: 0; transform: scale(0.5);
+      animation: mg-ba-arrow-in 0.4s 1.0s forwards;
+    }
+    @keyframes mg-ba-arrow-in {
+      0%   { opacity: 0; transform: scale(0.5); }
+      60%  { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .mg-ba-after { opacity: 0; animation: mg-ba-after-in 0.5s 2.0s forwards; }
+    .mg-ba-after .mg-ba-value {
+      font-size: 280px; color: #ff6b00;
+      text-shadow: 0 0 80px rgba(255, 107, 0, 0.5);
+    }
+    @keyframes mg-ba-after-in {
+      0%   { opacity: 0; transform: scale(0.6); }
+      50%  { opacity: 1; transform: scale(1.15); }
+      75%  { transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    /* Native-style IG/TikTok comment bubble at top */
+    .cta-comment {
+      position: absolute;
+      top: 110px;
+      left: 60px;
+      right: 60px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: rgba(255, 255, 255, 0.96);
+      color: #000;
+      padding: 18px 24px;
+      border-radius: 28px;
+      box-shadow: 0 8px 0 rgba(0, 0, 0, 0.45);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .cta-comment .avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff6b00, #ffaa44);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    .cta-comment .meta { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+    .cta-comment .name { font-size: 24px; font-weight: 800; color: #555; }
+    .cta-comment .body { font-size: 32px; font-weight: 700; color: #000; }
+  </style>
+</head>
+<body>
+  <div id="root" data-composition-id="pause-copy-prompt" data-width="1080" data-height="1920" data-start="0" data-duration="31.53">
+
+    <video
+      id="aroll"
+      class="clip"
+      src="trimmed.mp4"
+      data-start="0"
+      data-duration="31.53"
+      data-track-index="0"
+      muted
+      style="z-index: 1"
+    ></video>
+
+    <audio
+      id="aroll-audio"
+      class="clip"
+      src="trimmed.mp4"
+      data-start="0"
+      data-duration="31.53"
+      data-track-index="2"
+    ></audio>
+
+    <!-- B-ROLL TOP STRIPS (timing recalibrated for 31.53s timeline) -->
+    <div class="clip broll-strip" data-start="6.50" data-duration="4.50" data-track-index="7" style="z-index: 7">
+      <div class="label">B-roll needed</div>
+      <div>Screen recording: content-strategist skill running in Claude Code (~5s)</div>
+    </div>
+    <!-- MG: 11-minute counter (replaces stopwatch placeholder) -->
+    <div class="clip mg-counter" data-start="13.50" data-duration="2.30" data-track-index="7" style="z-index: 7">
+      <div class="mg-counter-stack">
+        <span class="n">0</span><span class="n">1</span><span class="n">2</span><span class="n">3</span>
+        <span class="n">4</span><span class="n">5</span><span class="n">6</span><span class="n">7</span>
+        <span class="n">8</span><span class="n">9</span><span class="n">10</span>
+        <span class="n n-final">11</span>
+      </div>
+      <div class="mg-counter-unit">MINUTES</div>
+    </div>
+    <!-- MG: 3 HOURS -> 11 MIN (replaces "before mess" placeholder) -->
+    <div class="clip mg-ba" data-start="16.50" data-duration="5.50" data-track-index="7" style="z-index: 7">
+      <div class="mg-ba-side mg-ba-before">
+        <div class="mg-ba-label">Before</div>
+        <div class="mg-ba-value">3</div>
+        <div class="mg-ba-unit">Hours</div>
+      </div>
+      <div class="mg-ba-arrow">→</div>
+      <div class="mg-ba-side mg-ba-after">
+        <div class="mg-ba-label">Now</div>
+        <div class="mg-ba-value">11</div>
+        <div class="mg-ba-unit">Min</div>
+      </div>
+    </div>
+    <div class="clip broll-strip" data-start="27.00" data-duration="4.20" data-track-index="7" style="z-index: 7">
+      <div class="label">B-roll needed</div>
+      <div>Screen recording of 100x Marketer Skool community (~4s)</div>
+    </div>
+
+    <!-- WORD-BY-WORD CAPTIONS -->
+    <div class="clip caption" data-start="0.000" data-duration="0.760" data-track-index="6" style="z-index: 6">Pause</div>
+    <div class="clip caption" data-start="0.780" data-duration="0.180" data-track-index="6" style="z-index: 6">this</div>
+    <div class="clip caption" data-start="0.980" data-duration="0.320" data-track-index="6" style="z-index: 6">video</div>
+    <div class="clip caption" data-start="1.320" data-duration="0.260" data-track-index="6" style="z-index: 6">and</div>
+    <div class="clip caption" data-start="1.600" data-duration="0.220" data-track-index="6" style="z-index: 6">copy</div>
+    <div class="clip caption" data-start="1.840" data-duration="0.320" data-track-index="6" style="z-index: 6">this</div>
+    <div class="clip caption" data-start="2.180" data-duration="0.780" data-track-index="6" style="z-index: 6">prompt.</div>
+    <div class="clip caption" data-start="2.980" data-duration="0.420" data-track-index="6" style="z-index: 6">This</div>
+    <div class="clip caption" data-start="3.420" data-duration="0.320" data-track-index="6" style="z-index: 6">is what</div>
+    <div class="clip caption" data-start="3.760" data-duration="0.280" data-track-index="6" style="z-index: 6">runs</div>
+    <div class="clip caption" data-start="4.060" data-duration="0.260" data-track-index="6" style="z-index: 6">my</div>
+    <div class="clip caption" data-start="4.340" data-duration="0.320" data-track-index="6" style="z-index: 6">Monday</div>
+    <div class="clip caption" data-start="4.680" data-duration="0.320" data-track-index="6" style="z-index: 6">morning</div>
+    <div class="clip caption" data-start="5.020" data-duration="0.480" data-track-index="6" style="z-index: 6">content</div>
+    <div class="clip caption" data-start="5.520" data-duration="0.280" data-track-index="6" style="z-index: 6">every</div>
+    <div class="clip caption" data-start="5.820" data-duration="0.780" data-track-index="6" style="z-index: 6">week.</div>
+    <div class="clip caption" data-start="6.620" data-duration="0.320" data-track-index="6" style="z-index: 6">This</div>
+    <div class="clip caption" data-start="6.960" data-duration="0.400" data-track-index="6" style="z-index: 6">skill</div>
+    <div class="clip caption" data-start="7.380" data-duration="0.620" data-track-index="6" style="z-index: 6">scans</div>
+    <div class="clip caption" data-start="8.020" data-duration="0.800" data-track-index="6" style="z-index: 6">my</div>
+    <div class="clip caption" data-start="9.220" data-duration="0.180" data-track-index="6" style="z-index: 6">pulls</div>
+    <div class="clip caption" data-start="9.420" data-duration="0.260" data-track-index="6" style="z-index: 6">in</div>
+    <div class="clip caption" data-start="9.700" data-duration="0.320" data-track-index="6" style="z-index: 6">trending</div>
+    <div class="clip caption" data-start="10.040" data-duration="0.760" data-track-index="6" style="z-index: 6">hooks,</div>
+    <div class="clip caption" data-start="10.820" data-duration="0.480" data-track-index="6" style="z-index: 6">and</div>
+    <div class="clip caption" data-start="11.320" data-duration="0.420" data-track-index="6" style="z-index: 6">pitches me</div>
+    <div class="clip caption" data-start="11.760" data-duration="0.480" data-track-index="6" style="z-index: 6">three</div>
+    <div class="clip caption" data-start="12.260" data-duration="0.520" data-track-index="6" style="z-index: 6">briefs</div>
+    <div class="clip caption" data-start="12.800" data-duration="0.300" data-track-index="6" style="z-index: 6">ready</div>
+    <div class="clip caption" data-start="13.120" data-duration="0.800" data-track-index="6" style="z-index: 6">to</div>
+    <div class="clip caption" data-start="14.320" data-duration="0.540" data-track-index="6" style="z-index: 6">11</div>
+    <div class="clip caption" data-start="14.880" data-duration="0.360" data-track-index="6" style="z-index: 6">minutes,</div>
+    <div class="clip caption" data-start="15.440" data-duration="0.240" data-track-index="6" style="z-index: 6">that's</div>
+    <div class="clip caption" data-start="15.700" data-duration="0.220" data-track-index="6" style="z-index: 6">all it</div>
+    <div class="clip caption" data-start="15.940" data-duration="0.240" data-track-index="6" style="z-index: 6">takes</div>
+    <div class="clip caption" data-start="16.200" data-duration="0.920" data-track-index="6" style="z-index: 6">me now.</div>
+    <div class="clip caption" data-start="17.140" data-duration="0.540" data-track-index="6" style="z-index: 6">I</div>
+    <div class="clip caption" data-start="17.700" data-duration="0.180" data-track-index="6" style="z-index: 6">used</div>
+    <div class="clip caption" data-start="17.900" data-duration="0.380" data-track-index="6" style="z-index: 6">to spend</div>
+    <div class="clip caption" data-start="18.300" data-duration="0.480" data-track-index="6" style="z-index: 6">three</div>
+    <div class="clip caption" data-start="18.800" data-duration="0.220" data-track-index="6" style="z-index: 6">hours</div>
+    <div class="clip caption" data-start="19.040" data-duration="0.180" data-track-index="6" style="z-index: 6">doing</div>
+    <div class="clip caption" data-start="19.240" data-duration="0.240" data-track-index="6" style="z-index: 6">this</div>
+    <div class="clip caption" data-start="19.500" data-duration="0.220" data-track-index="6" style="z-index: 6">every</div>
+    <div class="clip caption" data-start="19.740" data-duration="0.220" data-track-index="6" style="z-index: 6">Monday</div>
+    <div class="clip caption" data-start="19.980" data-duration="0.420" data-track-index="6" style="z-index: 6">morning</div>
+    <div class="clip caption" data-start="20.420" data-duration="0.220" data-track-index="6" style="z-index: 6">going</div>
+    <div class="clip caption" data-start="20.660" data-duration="0.460" data-track-index="6" style="z-index: 6">through</div>
+    <div class="clip caption" data-start="21.140" data-duration="0.360" data-track-index="6" style="z-index: 6">researching</div>
+    <div class="clip caption" data-start="21.520" data-duration="0.500" data-track-index="6" style="z-index: 6">content</div>
+    <div class="clip caption" data-start="22.040" data-duration="0.380" data-track-index="6" style="z-index: 6">and</div>
+    <div class="clip caption" data-start="22.440" data-duration="0.240" data-track-index="6" style="z-index: 6">creating</div>
+    <div class="clip caption" data-start="22.700" data-duration="0.340" data-track-index="6" style="z-index: 6">scripts</div>
+    <div class="clip caption" data-start="23.060" data-duration="0.200" data-track-index="6" style="z-index: 6">from</div>
+    <div class="clip caption" data-start="23.280" data-duration="0.940" data-track-index="6" style="z-index: 6">my videos.</div>
+    <div class="clip caption" data-start="24.240" data-duration="0.540" data-track-index="6" style="z-index: 6">But</div>
+    <div class="clip caption" data-start="24.800" data-duration="0.280" data-track-index="6" style="z-index: 6">now</div>
+    <div class="clip caption" data-start="25.100" data-duration="0.320" data-track-index="6" style="z-index: 6">I do</div>
+    <div class="clip caption" data-start="25.440" data-duration="0.380" data-track-index="6" style="z-index: 6">it all</div>
+    <div class="clip caption" data-start="25.840" data-duration="0.220" data-track-index="6" style="z-index: 6">with</div>
+    <div class="clip caption" data-start="26.080" data-duration="0.300" data-track-index="6" style="z-index: 6">vibe</div>
+    <div class="clip caption" data-start="26.400" data-duration="0.400" data-track-index="6" style="z-index: 6">marketing.</div>
+    <div class="clip caption" data-start="26.820" data-duration="0.500" data-track-index="6" style="z-index: 6">The</div>
+    <div class="clip caption" data-start="27.340" data-duration="0.360" data-track-index="6" style="z-index: 6">skill,</div>
+    <div class="clip caption" data-start="27.740" data-duration="0.280" data-track-index="6" style="z-index: 6">the brand</div>
+    <div class="clip caption" data-start="28.040" data-duration="0.520" data-track-index="6" style="z-index: 6">profile,</div>
+    <div class="clip caption" data-start="28.580" data-duration="0.280" data-track-index="6" style="z-index: 6">and the</div>
+    <div class="clip caption" data-start="28.880" data-duration="0.240" data-track-index="6" style="z-index: 6">prompt</div>
+    <div class="clip caption" data-start="29.140" data-duration="0.340" data-track-index="6" style="z-index: 6">are</div>
+    <div class="clip caption" data-start="29.500" data-duration="0.240" data-track-index="6" style="z-index: 6">all</div>
+    <div class="clip caption" data-start="29.760" data-duration="0.280" data-track-index="6" style="z-index: 6">free</div>
+    <div class="clip caption" data-start="30.060" data-duration="0.380" data-track-index="6" style="z-index: 6">in my</div>
+    <div class="clip caption" data-start="30.460" data-duration="0.560" data-track-index="6" style="z-index: 6">100x</div>
+    <div class="clip caption" data-start="31.040" data-duration="0.240" data-track-index="6" style="z-index: 6">marketer.</div>
+
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    window.__timelines["pause-copy-prompt"] = gsap.timeline({ paused: true });
+  </script>
+</body>
+</html>

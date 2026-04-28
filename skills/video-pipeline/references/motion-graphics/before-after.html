@@ -1,0 +1,131 @@
+<!--
+Motion graphic: Before/after comparison
+Use case: contrast a "before" value with an "after" value ("3 HOURS → 11 MIN", "$400/mo → $0")
+Slot: top-strip (1080x760), data-track-index=7
+Duration: 3-5s recommended
+Customize: change the BEFORE and AFTER values + units
+-->
+<style>
+  .mg-ba {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1080px;
+    height: 760px;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .mg-ba-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .mg-ba-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #666666;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .mg-ba-value {
+    font-family: 'JetBrains Mono', 'Menlo', 'Courier New', monospace;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .mg-ba-unit {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 8px;
+    margin-top: 16px;
+    text-transform: uppercase;
+  }
+
+  /* BEFORE side: gray, fades in fast, then gets a strikethrough at 1.5s */
+  .mg-ba-before {
+    opacity: 0;
+    animation: mg-ba-before-in 0.4s 0.0s forwards;
+  }
+  .mg-ba-before .mg-ba-value {
+    font-size: 220px;
+    color: #888888;
+    position: relative;
+  }
+  .mg-ba-before .mg-ba-value::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+    width: 0%;
+    height: 12px;
+    background: #ff6b00;
+    transform: translateY(-50%);
+    animation: mg-ba-strike 0.4s 1.5s forwards;
+  }
+  @keyframes mg-ba-before-in {
+    0%   { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes mg-ba-strike {
+    0%   { width: 0%; }
+    100% { width: 105%; }
+  }
+
+  /* Arrow appears at 1.0s with scale-in */
+  .mg-ba-arrow {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 140px;
+    font-weight: 900;
+    color: #ff6b00;
+    line-height: 1;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: mg-ba-arrow-in 0.4s 1.0s forwards;
+  }
+  @keyframes mg-ba-arrow-in {
+    0%   { opacity: 0; transform: scale(0.5); }
+    60%  { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  /* AFTER side: hidden until 2.0s, then pops in big and orange */
+  .mg-ba-after {
+    opacity: 0;
+    animation: mg-ba-after-in 0.5s 2.0s forwards;
+  }
+  .mg-ba-after .mg-ba-value {
+    font-size: 280px;
+    color: #ff6b00;
+    text-shadow: 0 0 80px rgba(255, 107, 0, 0.5);
+  }
+  @keyframes mg-ba-after-in {
+    0%   { opacity: 0; transform: scale(0.6); }
+    50%  { opacity: 1; transform: scale(1.15); }
+    75%  { transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+</style>
+<div class="clip mg-ba" data-start="0" data-duration="5.0" data-track-index="7" style="z-index: 7">
+  <div class="mg-ba-side mg-ba-before">
+    <div class="mg-ba-label">Before</div>
+    <div class="mg-ba-value">3</div>
+    <div class="mg-ba-unit">Hours</div>
+  </div>
+  <div class="mg-ba-arrow">→</div>
+  <div class="mg-ba-side mg-ba-after">
+    <div class="mg-ba-label">Now</div>
+    <div class="mg-ba-value">11</div>
+    <div class="mg-ba-unit">Min</div>
+  </div>
+</div>
