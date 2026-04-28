@@ -85,13 +85,25 @@ Every piece of content ladders up to one of these. Briefs that don't fit a pilla
 
 ## Target Audience
 
-The smart, exhausted solo marketer (or 2-3 person marketing team lead). They are not new to marketing. They have shipped real campaigns. They are drowning in tools and tabs. They are AI-curious but past the hype cycle. They have tried ChatGPT and a few automation tools, and they want something that actually compounds.
+**The scrappy in-house marketer who does everything at a small company.**
 
-- Age range: 28-45
+This is the wedge. They are not enterprise marketers (Marketing Against the Grain serves those). They are not agency builders (Liam Ottley serves those). They are not creators (Greg Isenberg / vibe-marketing-Skool serves those). They are the **only marketer (or one of two) at a 10-200 person company**, expected to run every channel: SEO, content, email, ads, social, ops, analytics, sometimes events. They have no specialist support. They wear every hat because the team is small and the budget is smaller.
+
+What defines them:
+- They do every marketing job themselves. They are generalists out of necessity, not preference.
+- They have shipped real campaigns. They are not new to marketing.
+- They are drowning in tools and tabs. SaaS sprawl has eaten their budget.
+- They are AI-curious but past the hype cycle. They have tried ChatGPT and a few automation tools and want something that actually compounds.
+- They want to learn how to automate their workflows and systems with Claude Code specifically (not n8n, not Make, not Zapier, though those are familiar).
+
+Demographics:
+- Age range: 26-42
 - Gender skew: even split, slight male skew on Twitter/X, slight female skew on Instagram
-- Income / stage: solo marketer at a 10-200 person company, agency owner, or in-house marketing lead
-- Lifestyle markers: remote/hybrid worker, Notion power user, follows marketing creators on X and LinkedIn, has Claude Pro or ChatGPT Plus already
-- Frustrated by: "AI productivity" content that is all hype and no workflow; SaaS bills creeping up; being the only one at the company who "gets" AI
+- Stage: only marketer (or one of two) at a 10-200 person company. In-house, not agency, not freelance.
+- Lifestyle markers: remote/hybrid worker, Notion power user, follows marketing creators on X and LinkedIn, has Claude Pro or ChatGPT Plus already.
+- Frustrated by: "AI productivity" content that is all hype and no workflow; SaaS bills creeping up; being the only one at the company who "gets" AI; being asked to "do more with less" every quarter; never having time to learn something new because they are always behind on the current quarter's plan.
+
+What we promise them: a free skills library that handles real marketing jobs end-to-end, so they can ship like a five-person team without hiring one.
 
 ---
 
