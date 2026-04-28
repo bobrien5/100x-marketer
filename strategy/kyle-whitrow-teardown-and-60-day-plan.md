@@ -86,13 +86,15 @@ Three phases, each two weeks-ish. Targets are aggressive but achievable given th
 - 3 × Live builds (sub-60s skill builds)
 - 2 × Mental model planting (Brief / Tool Belt / Playbook / Guardrails)
 
-**Lead magnet to build NOW (week 1, ship by day 7):**
-The `quickstart/` folder we already have IS the lead magnet — but it needs a one-page landing wrapper with:
-- Hook headline: "Run marketing like a 5-person team. Solo. In 10 minutes."
-- 30-second demo video (built from one of our renders)
-- Email capture before the GitHub link
-- "Free, no upsell" framing
-- Auto-redirect into Skool community after email capture
+**Lead magnet system to build NOW (week 1, ship by day 7):**
+
+Per the locked funnel below, the lead magnet is delivered through ManyChat keyword-DM flows, not a landing page. Build:
+
+- **3 ManyChat sequences** (one per existing reel: `STRATEGIST`, `PUBLER`, `BRIEF`)
+- Each sequence: welcome → email capture → skill payload → 7-day nurture → Skool invite
+- Skill payloads packaged as: a `.zip` of the SKILL.md + references + a 30-second install screen recording, plus a one-page PDF cheatsheet
+- Skool community set up + Skills Library populated with the same files (so what's in the DM is also free in Skool)
+- Bio link points directly to the Skool community (parallel low-friction path for hot leads)
 
 ### Phase 2 — Compound (days 15-45)
 
@@ -135,68 +137,169 @@ Recommended: a **$27/mo Skool tier** OR **$199 one-time skill pack** (mirror Kyl
 
 ---
 
-## The funnel (drawn explicitly)
+## The funnel (locked: ManyChat-driven)
+
+The funnel runs through ManyChat DM sequences. Each reel triggers a per-keyword sequence that delivers the skill, captures email, then nurtures into the Skool community. Bio link goes directly to Skool as a parallel (lower-friction) path for hot leads.
 
 ```
                            SHORT-FORM REELS (daily)
                            IG / TikTok / Shorts
                                     │
                                     ▼
-                     CTA in caption + bio link
+            CTA in video + caption: "Comment KEYWORD for the skill"
                                     │
-                                    ▼
-                          ┌──────────────────────┐
-                          │  Single landing page │
-                          │  100xmarketer.com    │
-                          │  (one offer, big H1) │
-                          └──────────┬───────────┘
-                                     │
-                                     ▼
-                       Email capture → Auto-invite
-                                     │
-                                     ▼
-                          ┌──────────────────────┐
-                          │  Free Skool community │
-                          │  ("Skills Library")   │
-                          └──────────┬───────────┘
-                                     │
-              ┌──────────────────────┼──────────────────────┐
-              ▼                      ▼                      ▼
-         Weekly newsletter      Skill drops           Office hours
-         (Mondays)              (every reel = post)   (weekly, recorded)
-              │                      │                      │
-              └──────────────────────┴──────────────────────┘
-                                     │
-                                     ▼
-                          Nurture: 4-6 weeks
-                                     │
-                                     ▼
-                          ┌──────────────────────┐
-                          │ Paid offer            │
-                          │ $27/mo Skool tier OR  │
-                          │ $199 skill pack       │
-                          └───────────────────────┘
+                  ┌─────────────────┴──────────────────┐
+                  ▼                                    ▼
+          ManyChat keyword                       Bio link
+          trigger fires                          (parallel path)
+                  │                                    │
+                  ▼                                    │
+        ┌─────────────────────┐                        │
+        │ ManyChat DM flow    │                        │
+        │ • Welcome message   │                        │
+        │ • Email capture     │                        │
+        │ • Skill delivered   │                        │
+        │   (file + install   │                        │
+        │    instructions)    │                        │
+        └──────────┬──────────┘                        │
+                   │                                   │
+                   ▼                                   │
+        Email enrolled in nurture                      │
+        (3-5 message sequence over 7 days)             │
+                   │                                   │
+                   ▼                                   │
+        Sequence pitches Skool community ◄─────────────┘
+                   │
+                   ▼
+            ┌──────────────────────────┐
+            │  Free Skool community    │
+            │  ("Skills Library")      │
+            └──────────┬───────────────┘
+                       │
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+    Weekly newsletter  Skill drops   Office hours
+    (Mondays)          (every reel)  (weekly, recorded)
+        │              │              │
+        └──────────────┴──────────────┘
+                       │
+                       ▼
+                Nurture 4-6 weeks
+                       │
+                       ▼
+            ┌──────────────────────┐
+            │ Paid offer           │
+            │ $27/mo tier OR       │
+            │ $199 skill pack      │
+            └──────────────────────┘
 ```
+
+### Two reasons to use ManyChat (not just a landing page)
+
+1. **DM open rates beat email open rates by ~5x.** Comment-keyword → DM is currently the highest-converting top-of-funnel mechanic on IG.
+2. **The comment itself boosts the post.** Every "STRATEGIST" comment is a reach signal to the algorithm. Per-reel keywords compound this.
+
+### Why we still link to Skool from bio
+
+- **Hot leads** who have already seen 3-5 reels and want in NOW shouldn't be forced through a DM gate. Bio link goes straight to Skool join. They self-select.
+- **DM-gated reels** capture cold leads who want the specific skill. Two paths, same destination, no funnel cannibalization.
+
+---
+
+## ManyChat sequences (build these now)
+
+### Universal welcome (fires on first-ever DM, regardless of keyword)
+
+```
+Hey, glad you're here. I'm Brendan. I run 100x Marketer.
+
+I send 1-2 actual marketing skills per week (free), and I run a community
+where 100+ solo marketers are shipping with Claude Code.
+
+Two questions before I send the skill you commented for:
+
+1. What's your email so I can send you the install file?
+   (Type or paste — no spam, just the skill + a Monday newsletter)
+
+2. What's the #1 marketing job you wish a skill would do for you?
+   (One sentence is fine.)
+```
+
+### Per-reel sequences (one per shipped reel)
+
+Every reel ships with a unique keyword. The sequence has the same shape but the payload changes. **Format every sequence as:**
+
+1. **Trigger:** keyword in comment OR DM
+2. **Auto-reply (immediate):** confirm + link to ManyChat DM
+3. **Welcome message (DM):** ask for email + question
+4. **Skill delivery (DM, after email captured):** the actual file + install snippet + Skool invite
+5. **Day 2 follow-up (DM + email):** "Did the skill work? Reply with what broke."
+6. **Day 5 follow-up (DM + email):** "Here's the next skill in the same flow"
+7. **Day 7 follow-up (DM + email):** "Join the community for live builds"
+
+### The first three keywords (matching our existing reels)
+
+| Reel | Keyword | What we deliver |
+|---|---|---|
+| Pause. Copy this prompt. | `STRATEGIST` | content-strategist skill files (SKILL.md + brand-profile.md template) + 30-second install video |
+| Cancelled Hootsuite | `PUBLER` | publer-scheduler skill (or simplified prompt that schedules 7 posts) + Publer signup link with affiliate code if you have one |
+| 4 things every Claude setup needs | `BRIEF` | starter CLAUDE.md template + the 4 mental models cheatsheet + a 1-page PDF of the diagram |
+
+Future reels each get a new keyword — `EDIT`, `RECEIPT`, `VOICE`, `GUARDRAILS`, etc. **Keep it one word, all-caps, easy to type.**
+
+### The Skool pitch (Day 5 message)
+
+```
+Quick check-in. The {skill} you grabbed on {day} — did it land?
+
+If yes: lock me in. The next skill in the chain is dropping Monday and
+it makes that one twice as useful.
+
+You can grab it (and every future skill) free in the 100x Marketer
+community: {skool_link}
+
+If no: hit reply with what broke. Half the skills get smoother because
+of replies like yours.
+
+— Brendan
+```
+
+### Why this Skool pitch works
+- Doesn't ask for money. Asks for participation.
+- Frames Skool as where the skills GROW, not a paywall.
+- Treats the user's reply as the actual product feedback loop (it is).
+
+---
+
+## Bio link strategy
+
+**Bio link goes directly to Skool** (not a landing page, not Linktree). Reasoning:
+- Hot leads who already know who you are need the lowest-friction join.
+- Cold leads route through ManyChat (the captioned CTA), which captures email anyway.
+- If you ever need to swap, change one URL, not a tree of options.
+
+If we MUST have a landing page later (for paid offer launches in week 8), build it then. Until then, the Skool community IS the landing page.
 
 ### Why this funnel works (vs. random "buy my course" CTAs)
 
-1. **The free community is the lead magnet AND the audience nurture container** — same place, no email-only dead zone.
-2. **Skills are gifts, not gated content.** Every reel has a corresponding skill in the Library. Audience associates 100x Marketer with "the place where free skills live."
-3. **Paid tier is a clear graduation**, not a paywall. Members who attend office hours and want more depth opt in.
-4. **Newsletter is the only email thread** — single send per week, easy to read, no overlap with paid funnels.
+1. **DM beats email at top of funnel.** ManyChat captures intent at the moment it spikes (right after watching the reel).
+2. **Email is captured INSIDE the DM flow** — no abandoned form.
+3. **Skool is the destination, not the lead magnet.** The skill is the lead magnet. Skool is where the skills compound.
+4. **Paid tier is a graduation, not a paywall.** Members who attend office hours and want more depth opt in.
+5. **The keyword in every reel = comment volume = algorithmic reach.** Compounds.
 
 ---
 
 ## What we need to build, in order
 
-1. **Single landing page** at 100xmarketer.com (or whatever domain) — week 1.
-   Headline + 30s demo video + email capture + Skool join button.
-2. **Email capture → Skool auto-invite** — week 1. ConvertKit + Skool API or manual invite for first 100 members.
-3. **Free Skool community** with Skills Library, intro post, pinned welcome — week 1.
-4. **Newsletter** template — week 2.
-5. **First "live build" recording** — week 4. Doubles as YouTube long-form anchor.
-6. **Paid Skool tier** — week 8.
-7. **Affiliate program** — week 10.
+1. **Free Skool community** with Skills Library, intro post, pinned welcome — week 1, day 1-2. Bio link points here.
+2. **ManyChat account + first 3 keyword sequences** (`STRATEGIST`, `PUBLER`, `BRIEF`) — week 1, day 3-5. Use ManyChat Pro ($15/mo) since per-keyword automation is gated.
+3. **Skill packaging** — week 1, day 5-7. Each lead magnet = .zip of SKILL.md + references + 30s install screen recording + 1-page PDF cheatsheet.
+4. **Email tool wired into ManyChat** — week 1. ConvertKit or Beehiiv. ManyChat captures the email; tool runs the 7-day nurture.
+5. **Newsletter** template — week 2.
+6. **First "live build" recording** — week 4. Doubles as YouTube long-form anchor.
+7. **Paid Skool tier** — week 8.
+8. **Affiliate program** — week 10.
 
 ---
 
@@ -205,8 +308,11 @@ Recommended: a **$27/mo Skool tier** OR **$199 one-time skill pack** (mirror Kyl
 - **Follower count** on IG, TikTok, YouTube Shorts (weekly snapshot)
 - **Reach + engagement rate** per reel (weekly)
 - **Top 3 hook patterns** by reach (refresh weekly)
-- **Bio-link clicks → email captures conversion rate** (target: 30%+)
-- **Email captures → Skool join conversion rate** (target: 70%+)
+- **Comment-keyword volume per reel** (target: 5%+ of reach commenting the keyword)
+- **ManyChat DM open rate** (target: 80%+)
+- **DM → email capture conversion rate** (target: 40%+)
+- **Email captures → Skool join conversion rate** (target: 50%+)
+- **Bio-link clicks → Skool join** (parallel hot-lead path; no email captured but high quality)
 - **Skool join → engagement** (post / comment / reaction in first 7 days)
 - **Free → Paid conversion rate** at week 8 (target: 5%+)
 - **Newsletter open rate** (target: 40%+)
@@ -229,9 +335,10 @@ I can build a `skills/growth-tracker` skill that pulls these every Monday into a
 
 Pick one to do first:
 
-1. **Build the landing page** (~2 hours of work, unblocks the funnel)
-2. **Set up the free Skool community** (~30 min, but seed content takes a day)
-3. **Define the paid offer specifics** (price, tier, what's inside) — needed for week 8 but better to decide now so phase 1+2 content can hint at it
-4. **Run the next batch of 5 reels** (the pipeline is hot, content-strategist runs tomorrow morning)
+1. **Set up the free Skool community** (~30 min for Skool itself, but seed content takes a day) — bio link target, the funnel floor.
+2. **Set up ManyChat + the first sequence** (`STRATEGIST` for the pause-copy-prompt reel) — 1-2 hours. Once one sequence is live, the other two are templated copies.
+3. **Package the first lead magnet** (the content-strategist skill files + 30s install video + 1-page PDF) — 1 hour.
+4. **Define the paid offer specifics** (price, tier, what's inside) — needed for week 8 but better to decide now so phase 1+2 content can hint at it.
+5. **Run the next batch of 5 reels** (the pipeline is hot, content-strategist runs tomorrow morning).
 
-My vote: **#2 first** (free Skool community) since it's the destination for every CTA we ship. Without it, the funnel has no floor. Then #1 (landing page) the same week.
+Recommended order: **1 → 3 → 2** in week 1. Skool first (the destination exists). Then the lead magnet (the thing ManyChat delivers). Then ManyChat (the delivery mechanism). Without the destination and the payload, ManyChat is plumbing with nothing to plumb.
