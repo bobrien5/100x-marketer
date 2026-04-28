@@ -2,7 +2,7 @@
 
 Three keyword-triggered DM flows for the existing reels, plus a universal welcome flow for first-time DMers regardless of keyword. Copy is voice-compliant per `brand/BRAND_VOICE.md` (no em dashes, no banned words, conversational length).
 
-When you build these in ManyChat, paste these blocks directly into the message editor. Replace `{skool_url}` and `{newsletter_signup_url}` with real URLs once those exist. Replace `{install_video_url}` with the 30-second install demo we'll record from one of our reels.
+When you build these in ManyChat, paste these blocks directly into the message editor. The Skool URL is already filled in (`https://www.skool.com/100x-marketers-1762`). Replace `{newsletter_signup_url}` once the email tool is wired up. Replace `{install_video_url}` with the 30-second install demo we'll record from one of our reels.
 
 ---
 
@@ -89,7 +89,7 @@ The skill that writes the script from the brief is dropping Monday.
 It also lives free in the 100x Marketer community along with every
 skill I've ever shipped:
 
-→ {skool_url}
+→ https://www.skool.com/100x-marketers-1762
 
 50+ solo marketers in there already. Free, no upsell.
 ```
@@ -102,7 +102,7 @@ Last note from me:
 If you want to see how I actually use these skills, I do a live build
 every Friday in the community. Recorded for anyone who can't make it.
 
-→ {skool_url}
+→ https://www.skool.com/100x-marketers-1762
 
 That's it. I'll send the next skill Monday in the newsletter.
 ```
