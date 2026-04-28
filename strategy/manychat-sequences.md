@@ -14,7 +14,7 @@ Set this as a one-time message that runs before the keyword payload, only on fir
 Hey, glad you're here. I'm Brendan. I run 100x Marketer.
 
 I send 1 actual marketing skill per week (free), and I run a community
-where solo marketers ship with Claude Code without writing a line of code.
+where solo operators (in-house marketers, founders, part-time builders) ship with Claude Code without writing a line of code.
 
 Two quick things before I send you the skill you came for:
 
@@ -91,7 +91,7 @@ skill I've ever shipped:
 
 → https://www.skool.com/100x-marketers-1762
 
-50+ solo marketers in there already. Free, no upsell.
+50+ solo operators in there already, in-house marketers, founders, and builders. Free, no upsell.
 ```
 
 **Step 6 (DM + email, day 7):**

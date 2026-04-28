@@ -214,7 +214,7 @@ The funnel runs through ManyChat DM sequences. Each reel triggers a per-keyword 
 Hey, glad you're here. I'm Brendan. I run 100x Marketer.
 
 I send 1-2 actual marketing skills per week (free), and I run a community
-where 100+ solo marketers are shipping with Claude Code.
+where 100+ solo operators (in-house marketers, founders, part-time builders) are shipping with Claude Code.
 
 Two questions before I send the skill you commented for:
 
@@ -325,7 +325,7 @@ I can build a `skills/growth-tracker` skill that pulls these every Monday into a
 
 1. **Burnout on daily posting.** Mitigation: batch 5-7 reels every Monday using our pipeline. The `video-pipeline` skill already exists and is shake-out-tested.
 2. **Hook fatigue.** Mitigation: the brand-profile.md format competitor list (Sabrina, Kyle, mavgpt) has a deep well of hook patterns. Repurpose ruthlessly.
-3. **Audience overlap with Kyle / James.** Mitigation: lean into "solo marketer at 10-200 person company" wedge. Kyle and James lean creator/agency. That seat is open.
+3. **Audience overlap with Kyle / James.** Mitigation: lean into "team of one running marketing for a real business" wedge — covers in-house marketers, founders, and part-time builders. Kyle and James lean creator/agency. That seat is open.
 4. **Free Skool community ghost town.** Mitigation: seed it with 10 friends + 30 days of pinned content + daily check-in posts before announcing publicly.
 5. **No live demo of the product.** Mitigation: every reel IS a live demo. The product (skills) lives on the public GitHub repo. Distance from sale → use is zero.
 

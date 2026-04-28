@@ -85,25 +85,36 @@ Every piece of content ladders up to one of these. Briefs that don't fit a pilla
 
 ## Target Audience
 
-**The scrappy in-house marketer who does everything at a small company.**
+**Solo operators running marketing for a real business with no team and no time.**
 
-This is the wedge. They are not enterprise marketers (Marketing Against the Grain serves those). They are not agency builders (Liam Ottley serves those). They are not creators (Greg Isenberg / vibe-marketing-Skool serves those). They are the **only marketer (or one of two) at a 10-200 person company**, expected to run every channel: SEO, content, email, ads, social, ops, analytics, sometimes events. They have no specialist support. They wear every hat because the team is small and the budget is smaller.
+This is the unifying wedge. Three concrete flavors of this person:
 
-What defines them:
-- They do every marketing job themselves. They are generalists out of necessity, not preference.
-- They have shipped real campaigns. They are not new to marketing.
-- They are drowning in tools and tabs. SaaS sprawl has eaten their budget.
+**1. The scrappy in-house marketer (primary).** The only marketer (or one of two) at a 10-200 person company. Expected to run every channel: SEO, content, email, ads, social, ops, analytics, sometimes events. No specialist support. Small team, smaller budget.
+
+**2. The founder doing their own marketing.** Solo founder or 2-5 person early-stage team. Has product but doesn't have customers yet. Marketing is the bottleneck and they don't want to hire an agency or a CMO before they've found product-market fit. They want to run distribution themselves, fast and cheap.
+
+**3. The part-time builder.** 9-5er, indie hacker, or side-project operator building something on nights and weekends. Time is the binding constraint, not budget. They need marketing that runs while they're at their day job.
+
+What unites all three (this is what every brief, reel, and skill should speak to):
+- They do every marketing job themselves. Generalists out of necessity, not preference.
+- They have a real business. Not a content brand, not a personal brand. A company with a product or service.
+- Time is their scarcest resource. SaaS bills and tool sprawl are second-scarcest.
 - They are AI-curious but past the hype cycle. They have tried ChatGPT and a few automation tools and want something that actually compounds.
-- They want to learn how to automate their workflows and systems with Claude Code specifically (not n8n, not Make, not Zapier, though those are familiar).
+- They want to automate workflows with Claude Code specifically (not n8n, not Make, not Zapier, though those are familiar).
+
+We are NOT for:
+- Enterprise marketing leaders (Marketing Against the Grain serves those).
+- Agency builders selling AI services to clients (Liam Ottley serves those).
+- Pure content creators / personal-brand builders (Greg Isenberg, Vibe Marketers Skool serve those).
 
 Demographics:
-- Age range: 26-42
+- Age range: 24-45 (broader than v1; founders skew younger, in-house marketers center 28-40, part-time builders span the full range)
 - Gender skew: even split, slight male skew on Twitter/X, slight female skew on Instagram
-- Stage: only marketer (or one of two) at a 10-200 person company. In-house, not agency, not freelance.
-- Lifestyle markers: remote/hybrid worker, Notion power user, follows marketing creators on X and LinkedIn, has Claude Pro or ChatGPT Plus already.
-- Frustrated by: "AI productivity" content that is all hype and no workflow; SaaS bills creeping up; being the only one at the company who "gets" AI; being asked to "do more with less" every quarter; never having time to learn something new because they are always behind on the current quarter's plan.
+- Stage: in-house marketer at 10-200 person co, OR founder/co-founder of an early-stage company, OR a part-time builder with a side project
+- Lifestyle markers: remote/hybrid, Notion power user, follows marketing or builder creators on X and LinkedIn, has Claude Pro or ChatGPT Plus already
+- Frustrated by: "AI productivity" content that is all hype and no workflow; SaaS bills creeping up; being the only one at the company / on the team who "gets" AI; being asked to "do more with less" every quarter (in-house) or to ship faster (founder/builder); never having time to learn something new
 
-What we promise them: a free skills library that handles real marketing jobs end-to-end, so they can ship like a five-person team without hiring one.
+What we promise: a free skills library that handles real marketing jobs end-to-end, so a team of one can ship like a five-person team without hiring one.
 
 ---
 
