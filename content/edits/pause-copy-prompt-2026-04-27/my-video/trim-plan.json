@@ -1,0 +1,95 @@
+{
+  "runs": [
+    {
+      "src_in": 0.0,
+      "src_out": 2.9800000000000004,
+      "out_start": 0,
+      "out_end": 2.9800000000000004,
+      "text": "Pause this video and copy this prompt."
+    },
+    {
+      "src_in": 7.4,
+      "src_out": 11.040000000000001,
+      "out_start": 2.9800000000000004,
+      "out_end": 6.620000000000001,
+      "text": "This is what runs my Monday morning content every week."
+    },
+    {
+      "src_in": 20.14,
+      "src_out": 22.34,
+      "out_start": 6.620000000000001,
+      "out_end": 8.82,
+      "text": "This skill scans my"
+    },
+    {
+      "src_in": 23.2,
+      "src_out": 23.599999999999998,
+      "out_start": 8.82,
+      "out_end": 9.219999999999999,
+      "text": "competitors,"
+    },
+    {
+      "src_in": 24.94,
+      "src_out": 26.54,
+      "out_start": 9.219999999999999,
+      "out_end": 10.819999999999997,
+      "text": "pulls in trending hooks,"
+    },
+    {
+      "src_in": 29.04,
+      "src_out": 32.14,
+      "out_start": 10.819999999999997,
+      "out_end": 13.919999999999998,
+      "text": "and pitches me three briefs ready to"
+    },
+    {
+      "src_in": 32.58,
+      "src_out": 32.98,
+      "out_start": 13.919999999999998,
+      "out_end": 14.319999999999997,
+      "text": "shoot."
+    },
+    {
+      "src_in": 34.8,
+      "src_out": 37.62,
+      "out_start": 14.319999999999997,
+      "out_end": 17.139999999999997,
+      "text": "11 minutes, that's all it takes me now."
+    },
+    {
+      "src_in": 39.34,
+      "src_out": 46.44,
+      "out_start": 17.139999999999997,
+      "out_end": 24.23999999999999,
+      "text": "I used to spend three hours doing this every Monday morning going through researching content and creating scripts from my videos."
+    },
+    {
+      "src_in": 50.34,
+      "src_out": 52.92,
+      "out_start": 24.23999999999999,
+      "out_end": 26.81999999999999,
+      "text": "But now I do it all with Thibe marketing."
+    },
+    {
+      "src_in": 66.12,
+      "src_out": 67.04,
+      "out_start": 26.81999999999999,
+      "out_end": 27.73999999999999,
+      "text": "The skill,"
+    },
+    {
+      "src_in": 69.02,
+      "src_out": 69.86,
+      "out_start": 27.73999999999999,
+      "out_end": 28.579999999999995,
+      "text": "the brand profile,"
+    },
+    {
+      "src_in": 70.2,
+      "src_out": 73.06,
+      "out_start": 28.579999999999995,
+      "out_end": 31.439999999999994,
+      "text": "and the prompt are all free in my 100x marker"
+    }
+  ]
+}

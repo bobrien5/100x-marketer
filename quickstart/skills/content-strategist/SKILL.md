@@ -1,151 +1,81 @@
 ---
 name: content-strategist
 description: >-
-  Social media content strategist. Scans competitor socials and niche trends via
-  web search, then generates ready-to-execute content briefs with hooks, scripts,
-  and CTAs. Use this skill when the user mentions content strategy, competitor
-  analysis, social media ideas, trending content, content briefs, what competitors
-  are posting, hooks that are working, or wants content ideas. Also trigger when
-  the user says "content strategist", "what's trending", or "what are competitors
-  doing".
+  Pulls competitor Instagram posts via Apify, stores them in Supabase, uses
+  Claude to extract hooks, content patterns, and CTAs, then renders a
+  localhost dashboard ranking what is performing. Use when the user mentions
+  competitor scraping, hook analysis, content patterns, what is working on
+  Reels, content dashboard, or asks "what should I post".
+  Trigger on "content strategist", "scrape competitors", "analyze hooks", or
+  "what is working".
 ---
 
 # Content Strategist
 
-You are a social media content strategist. Your job is to research what's working in the competitive landscape, identify trends and opportunities, and turn that intel into actionable content briefs.
+You are a data-driven content strategist. You do not guess what is working. You scrape it, store it, classify it, and surface it on a dashboard.
+
+The pipeline:
+
+1. **Scrape** competitor Instagram posts via Apify (`apify/instagram-scraper`).
+2. **Store** raw posts in Supabase.
+3. **Analyze** each post with Claude to extract the hook, content pattern, and CTA. Categories emerge from the data, you do not preassign them.
+4. **Visualize** at `localhost:3000` so the user can see which hooks and content formats earn the highest views and engagement rate.
 
 ## Before You Start
 
-1. Read the brand profile at `references/brand-profile.md` (relative to this skill's directory). This is the source of truth for competitors, search terms, content pillars, audience, and platforms.
-2. Read `CLAUDE.md` from the user's working directory for brand voice, banned words, and writing style rules. Every line of script and caption you generate must comply.
-3. If `references/brand-profile.md` still has bracketed placeholders like `[COMPANY]` or `[COMPETITOR 1]`, stop and tell the user to fill it in before running. The skill is useless without it.
+1. Read `CLAUDE.md` from the user's working directory. Brand voice, banned words, and writing rules apply to anything you summarize or recommend.
+2. Read `config/creators.json` (relative to this skill). That is the source of truth for who gets scraped. The user can edit it.
+3. Verify `.env` exists in the skill directory with `APIFY_TOKEN`, `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, and `ANTHROPIC_API_KEY`. If any are missing, point the user to `.env.example` and stop.
+4. First run only: ask the user to run `sql/schema.sql` in their Supabase SQL editor. Do not silently assume tables exist.
 
-## Phase 1, Competitive Intel & Trend Scan
+## The Commands
 
-Run web searches to gather intel across Instagram, TikTok, Facebook, X/Twitter, and Reddit. Use the brand profile's competitors, search terms, and content pillars to guide your searches.
+The user drives this skill with three verbs. Map their intent to the right script.
 
-### What to Search For
+| User says | You run |
+| --- | --- |
+| "scrape", "pull posts", "refresh data" | `node scripts/scrape.mjs` |
+| "analyze", "classify", "extract hooks" | `node scripts/analyze.mjs` |
+| "dashboard", "show me", "what is working" | `node scripts/serve.mjs` then open `http://localhost:3000` |
 
-Run a mix of searches targeting three areas:
+A full refresh is `scrape` then `analyze` then `serve`. Run them in that order. Do not run analyze before scrape on first setup, the database will be empty and you will waste a Claude call on nothing.
 
-**Competitor content**, what direct competitors are posting and what's getting engagement.
-- Search for competitor names + platform (e.g., `"[competitor name]" instagram`, `"[competitor name]" tiktok`)
-- Look for recent posts, hooks, CTAs, and engagement patterns
+## What Each Script Does
 
-**Niche trends**, what's trending in the broader niche right now.
-- Search for niche terms + "trending" or "viral" + platform + current timeframe
-- Look for news angles that create content opportunities
-- Check Reddit for community sentiment and pain points
+### `scrape.mjs`
+- Reads `config/creators.json`.
+- Calls the Apify Instagram actor for each handle.
+- Upserts creators and posts into Supabase. New posts get `analyzed_at = null` so the analyzer picks them up.
+- Prints a summary: posts pulled per creator.
 
-**Top-performing patterns**, which formats and styles are driving engagement in the space.
-- Search for top-performing content formats in the niche (carousels, short-form video, threads, memes)
-- Look for hook patterns and CTA styles that are working across the niche
+Default pull is the most recent 25 posts per creator. The user can change `POSTS_PER_CREATOR` in `.env` to widen or narrow.
 
-### How to Present Phase 1
+### `analyze.mjs`
+- Selects all posts where `analyzed_at IS NULL`.
+- For each post, sends the caption and (if available) transcript to Claude with a small instruction set: extract `hook_label`, `content_format_label`, and `cta_label` as short phrases (2-5 words each), and a one-sentence `summary`.
+- Writes results to the `analyses` table and stamps `analyzed_at` on the post.
+- Skips posts with no caption and no transcript. Logs them so the user knows.
 
-Organize findings into four sections. Be specific. Name posts, quote hooks, describe what you found. Vague summaries aren't useful.
+Categories are not predefined. The dashboard groups by exact-match label. If you see noisy duplicates ("how to start" vs "how-to start"), tell the user, do not silently merge.
 
-**Competitor Moves**, what competitors posted recently, what's working and what's flopping, tone and style observations.
+### `serve.mjs`
+- Boots an Express server on port 3000.
+- Serves `dashboard/index.html` and exposes `/api/stats` which returns aggregated label data: top hooks, top content formats, top CTAs, each ranked by post count and average engagement rate.
+- Engagement rate = `(likes + comments + shares) / views`. Posts with `views < 1000` are excluded from rate calculations to reduce noise.
 
-**Trending in Your Niche**, formats, hooks, topics, and news angles getting traction right now. Include why they're resonating.
+## When the User Asks for Briefs
 
-**Hooks & CTAs Worth Stealing**, specific language patterns, opening lines, and CTA styles that are performing. Quote them directly when possible.
+This skill is the data layer. If the user asks "what should I post", answer from the dashboard data. Pull the top 3 hooks and top 3 content formats by engagement rate, then sketch 2-3 brief ideas that combine them. Every recommendation must point at a specific post in the database. No vibes-based suggestions.
 
-**Opportunities**, gaps competitors are missing. Topics no one is covering. Angles that are underserved. This is where the real value lives.
+## Failure Modes
 
-### The Checkpoint
+- **Apify returns 0 posts for a handle:** the handle may be private, misspelled, or rate-limited. Tell the user, do not retry on a loop.
+- **Supabase insert fails:** likely the schema was not applied. Point at `sql/schema.sql`.
+- **Claude classification is junk:** check the post had a real caption. Short captions ("LOL") produce useless labels. The analyzer already skips empty ones.
+- **Dashboard is empty:** the user ran `serve` before `scrape` and `analyze`. Walk them back through the order.
 
-After presenting Phase 1, pause and ask:
+## What This Skill Does Not Do
 
-> "What stands out? Anything you want me to lean into or skip for the content briefs?"
-
-Wait for the user's response before moving to Phase 2. If they say "go" or "looks good" without specific direction, use your best judgment on which findings have the most potential.
-
-## Phase 2, Content Brief Generation
-
-Generate 3-5 content briefs informed by Phase 1 research and the user's feedback. Each brief should feel like something a strong social media manager would pitch in a content meeting. Specific, actionable, and tied to real data.
-
-### Brief Format
-
-For each brief, include:
-
-- **Platform:** Where this would perform best (IG Reel, TikTok, FB post, X thread, Reddit post, etc.)
-- **Hook:** The scroll-stopping opening line or visual concept. The first 2 seconds. Make it count.
-- **Concept:** What the content is about, the angle, and why it's timely.
-- **Script/Caption:** Ready-to-use copy. Structure:
-  - Line 1: Hook
-  - Lines 2-4: Value or insight
-  - Final line: CTA
-- **CTA:** The specific call to action (comment prompt, link click, promo code, share prompt, save prompt)
-- **Why This Works:** Tie it back to a specific trend, competitor gap, or high-performing pattern from Phase 1.
-
-### Presenting Briefs
-
-Present briefs one at a time so the user can react. After each brief, the user might say:
-- "Love it", move to the next
-- "More like this", generate another in the same vein
-- "Tweak the hook", revise and re-present
-- "Skip", move to the next
-
-### Content Quality Standards
-
-Every script and caption must comply with the brand voice and writing style rules in `CLAUDE.md` from the working directory. That file is the source of truth for tone, banned words, punctuation rules, and sample voice lines. Do not invent your own style.
-
-In addition:
-- **Hook:** Must stop the scroll in the first 2 seconds.
-- **Structure:** Hook > relatable problem > solution > social proof or benefit > CTA.
-- **Platform-native:** Content should feel like it belongs on the platform, not like an ad dropped into a feed.
-
-## Saving the Report
-
-When the user says "save it" (or similar), write a combined report to:
-
-```
-briefs/content-strategy-{YYYY-MM-DD}.md
-```
-
-(Relative to the user's working directory. Create the `briefs/` folder if it doesn't exist.)
-
-Use this template:
-
-```markdown
-# Content Strategy, {Brand}, {YYYY-MM-DD}
-
-## Competitive Intel
-
-### Competitor Moves
-{findings from Phase 1}
-
-### Trending in Niche
-{findings from Phase 1}
-
-### Hooks & CTAs Worth Stealing
-{findings from Phase 1}
-
-### Opportunities
-{findings from Phase 1}
-
----
-
-## Content Briefs
-
-### Brief 1: {Hook headline}
-- **Platform:** {platform}
-- **Hook:** {hook}
-- **Concept:** {concept}
-- **Script/Caption:**
-  {copy}
-- **CTA:** {cta}
-- **Why This Works:** {reasoning}
-
-{repeat for all approved briefs}
-```
-
-Confirm the save path to the user after writing.
-
-## Important Notes
-
-- Always use WebSearch for research. Do not fabricate competitor data or trends.
-- If web search returns limited results for a competitor or platform, say so honestly rather than making things up. Suggest alternative search angles.
-- `references/brand-profile.md` is the source of truth for the brand. The user can update that file anytime.
-- This skill focuses on research and strategy. It does not post content, manage influencers, or analyze the brand's own performance.
+- It does not post content. Use a separate scheduling tool.
+- It does not write captions. Use the `campaign-brief` skill or ask for a draft separately.
+- It does not track the user's own posts. It is competitor intel only. If the user wants their own performance, point them at the platform analytics.

@@ -1,0 +1,1972 @@
+{
+  "text": " So every Claude code setup that saves you hours has these four parts. Number one. Number one is the brief. So the brief is a markdown file that tells Claude code exactly how you want to work. And act as your marketing operator. Two is the tool belt and these are the MCPs that you connect to it. So think any software that you use for your marketing like notion, your scheduling tool I use public, your Gmail or GA4 for analytics. Most marketers skip this and is the reason. Most marketers skip this and it's the reason that they're. Most marketers skip this and it's the reason that they're set up as just a chatbot. And not actual workflows. The number three is the playbook. So these are the skills. It's one file, one run, everything done for you. The number four is the guard rails. These are hooks that block any band words that you want or it tells it exactly how you like to talk and write. So it always references that before shipping anything. Run all four and you'll be a top vibe marketer. All your workflows automated, saving you hours of time. And all of this is free in my 100x marketer community, where you can get going to the link in my bio.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 5.0,
+      "text": " So every Claude code setup that saves you hours has these four parts.",
+      "tokens": [
+        50363,
+        1406,
+        790,
+        40559,
+        2438,
+        9058,
+        326,
+        16031,
+        345,
+        2250,
+        468,
+        777,
+        1440,
+        3354,
+        13,
+        50613
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.34756714502970376,
+      "compression_ratio": 1.523489932885906,
+      "no_speech_prob": 0.04835952818393707,
+      "words": [
+        {
+          "word": " So",
+          "start": 0.0,
+          "end": 0.78,
+          "probability": 0.8790919780731201
+        },
+        {
+          "word": " every",
+          "start": 0.78,
+          "end": 1.18,
+          "probability": 0.8146505951881409
+        },
+        {
+          "word": " Claude",
+          "start": 1.18,
+          "end": 1.56,
+          "probability": 0.36473461985588074
+        },
+        {
+          "word": " code",
+          "start": 1.56,
+          "end": 1.92,
+          "probability": 0.6547120213508606
+        },
+        {
+          "word": " setup",
+          "start": 1.92,
+          "end": 2.32,
+          "probability": 0.7146017551422119
+        },
+        {
+          "word": " that",
+          "start": 2.32,
+          "end": 2.82,
+          "probability": 0.9756208062171936
+        },
+        {
+          "word": " saves",
+          "start": 2.82,
+          "end": 3.02,
+          "probability": 0.9993829727172852
+        },
+        {
+          "word": " you",
+          "start": 3.02,
+          "end": 3.26,
+          "probability": 0.9991260170936584
+        },
+        {
+          "word": " hours",
+          "start": 3.26,
+          "end": 3.5,
+          "probability": 0.9543246030807495
+        },
+        {
+          "word": " has",
+          "start": 3.5,
+          "end": 3.86,
+          "probability": 0.9798498153686523
+        },
+        {
+          "word": " these",
+          "start": 3.86,
+          "end": 4.24,
+          "probability": 0.995013415813446
+        },
+        {
+          "word": " four",
+          "start": 4.24,
+          "end": 4.52,
+          "probability": 0.9028973579406738
+        },
+        {
+          "word": " parts.",
+          "start": 4.52,
+          "end": 5.0,
+          "probability": 0.9981808662414551
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 8.860000000000001,
+      "end": 10.26,
+      "text": " Number one.",
+      "tokens": [
+        50763,
+        7913,
+        530,
+        13,
+        50795
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.34756714502970376,
+      "compression_ratio": 1.523489932885906,
+      "no_speech_prob": 0.04835952818393707,
+      "words": [
+        {
+          "word": " Number",
+          "start": 8.860000000000001,
+          "end": 9.56,
+          "probability": 0.8265226483345032
+        },
+        {
+          "word": " one.",
+          "start": 9.56,
+          "end": 10.26,
+          "probability": 0.8085247278213501
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 12.120000000000001,
+      "end": 15.2,
+      "text": " Number one is the brief.",
+      "tokens": [
+        50993,
+        7913,
+        530,
+        318,
+        262,
+        4506,
+        13,
+        51063
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.34756714502970376,
+      "compression_ratio": 1.523489932885906,
+      "no_speech_prob": 0.04835952818393707,
+      "words": [
+        {
+          "word": " Number",
+          "start": 12.120000000000001,
+          "end": 12.82,
+          "probability": 0.8487725853919983
+        },
+        {
+          "word": " one",
+          "start": 12.82,
+          "end": 13.22,
+          "probability": 0.9931384921073914
+        },
+        {
+          "word": " is",
+          "start": 13.22,
+          "end": 13.4,
+          "probability": 0.9881117343902588
+        },
+        {
+          "word": " the",
+          "start": 13.4,
+          "end": 15.2,
+          "probability": 0.9947556257247925
+        },
+        {
+          "word": " brief.",
+          "start": 15.2,
+          "end": 15.2,
+          "probability": 0.9443702101707458
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 18.060000000000002,
+      "end": 23.0,
+      "text": " So the brief is a markdown file that tells Claude code exactly how you want to work.",
+      "tokens": [
+        51288,
+        1406,
+        262,
+        4506,
+        318,
+        257,
+        1317,
+        2902,
+        2393,
+        326,
+        4952,
+        40559,
+        2438,
+        3446,
+        703,
+        345,
+        765,
+        284,
+        670,
+        13,
+        51513
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.34756714502970376,
+      "compression_ratio": 1.523489932885906,
+      "no_speech_prob": 0.04835952818393707,
+      "words": [
+        {
+          "word": " So",
+          "start": 18.060000000000002,
+          "end": 18.76,
+          "probability": 0.9837914705276489
+        },
+        {
+          "word": " the",
+          "start": 18.76,
+          "end": 18.94,
+          "probability": 0.9824454188346863
+        },
+        {
+          "word": " brief",
+          "start": 18.94,
+          "end": 19.22,
+          "probability": 0.9969906806945801
+        },
+        {
+          "word": " is",
+          "start": 19.22,
+          "end": 19.38,
+          "probability": 0.9948674440383911
+        },
+        {
+          "word": " a",
+          "start": 19.38,
+          "end": 19.7,
+          "probability": 0.994201123714447
+        },
+        {
+          "word": " markdown",
+          "start": 19.7,
+          "end": 20.04,
+          "probability": 0.7295819818973541
+        },
+        {
+          "word": " file",
+          "start": 20.04,
+          "end": 20.42,
+          "probability": 0.996857762336731
+        },
+        {
+          "word": " that",
+          "start": 20.42,
+          "end": 20.72,
+          "probability": 0.9809062480926514
+        },
+        {
+          "word": " tells",
+          "start": 20.72,
+          "end": 21.02,
+          "probability": 0.9835947155952454
+        },
+        {
+          "word": " Claude",
+          "start": 21.02,
+          "end": 21.36,
+          "probability": 0.9964507818222046
+        },
+        {
+          "word": " code",
+          "start": 21.36,
+          "end": 21.62,
+          "probability": 0.9306479096412659
+        },
+        {
+          "word": " exactly",
+          "start": 21.62,
+          "end": 22.0,
+          "probability": 0.993800699710846
+        },
+        {
+          "word": " how",
+          "start": 22.0,
+          "end": 22.26,
+          "probability": 0.9977107048034668
+        },
+        {
+          "word": " you",
+          "start": 22.26,
+          "end": 22.38,
+          "probability": 0.9986557960510254
+        },
+        {
+          "word": " want",
+          "start": 22.38,
+          "end": 22.54,
+          "probability": 0.991596519947052
+        },
+        {
+          "word": " to",
+          "start": 22.54,
+          "end": 22.72,
+          "probability": 0.9856347441673279
+        },
+        {
+          "word": " work.",
+          "start": 22.72,
+          "end": 23.07,
+          "probability": 0.9996685981750488
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 25.74,
+      "end": 27.94,
+      "text": " And act as your marketing operator.",
+      "tokens": [
+        51648,
+        843,
+        719,
+        355,
+        534,
+        7124,
+        10088,
+        13,
+        51763
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.34756714502970376,
+      "compression_ratio": 1.523489932885906,
+      "no_speech_prob": 0.04835952818393707,
+      "words": [
+        {
+          "word": " And",
+          "start": 25.74,
+          "end": 25.98,
+          "probability": 0.32633066177368164
+        },
+        {
+          "word": " act",
+          "start": 25.98,
+          "end": 26.24,
+          "probability": 0.9815368056297302
+        },
+        {
+          "word": " as",
+          "start": 26.24,
+          "end": 26.72,
+          "probability": 0.9963261485099792
+        },
+        {
+          "word": " your",
+          "start": 26.72,
+          "end": 27.0,
+          "probability": 0.9903175830841064
+        },
+        {
+          "word": " marketing",
+          "start": 27.0,
+          "end": 27.34,
+          "probability": 0.9782269597053528
+        },
+        {
+          "word": " operator.",
+          "start": 27.34,
+          "end": 27.94,
+          "probability": 0.995018720626831
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 3000,
+      "start": 31.16,
+      "end": 35.8,
+      "text": " Two is the tool belt and these are the MCPs that you connect to it.",
+      "tokens": [
+        50413,
+        4930,
+        318,
+        262,
+        2891,
+        10999,
+        290,
+        777,
+        389,
+        262,
+        337,
+        8697,
+        82,
+        326,
+        345,
+        2018,
+        284,
+        340,
+        13,
+        50613
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18114971047017112,
+      "compression_ratio": 1.4819277108433735,
+      "no_speech_prob": 0.009878912009298801,
+      "words": [
+        {
+          "word": " Two",
+          "start": 31.16,
+          "end": 31.76,
+          "probability": 0.25857698917388916
+        },
+        {
+          "word": " is",
+          "start": 31.76,
+          "end": 32.1,
+          "probability": 0.9656215906143188
+        },
+        {
+          "word": " the",
+          "start": 32.1,
+          "end": 32.24,
+          "probability": 0.9528314471244812
+        },
+        {
+          "word": " tool",
+          "start": 32.24,
+          "end": 32.46,
+          "probability": 0.9384891986846924
+        },
+        {
+          "word": " belt",
+          "start": 32.46,
+          "end": 32.78,
+          "probability": 0.9748408794403076
+        },
+        {
+          "word": " and",
+          "start": 32.78,
+          "end": 33.04,
+          "probability": 0.5778504014015198
+        },
+        {
+          "word": " these",
+          "start": 33.04,
+          "end": 33.4,
+          "probability": 0.9967401623725891
+        },
+        {
+          "word": " are",
+          "start": 33.4,
+          "end": 33.6,
+          "probability": 0.9983314871788025
+        },
+        {
+          "word": " the",
+          "start": 33.6,
+          "end": 33.78,
+          "probability": 0.99348384141922
+        },
+        {
+          "word": " MCPs",
+          "start": 33.78,
+          "end": 34.42,
+          "probability": 0.8687423666318258
+        },
+        {
+          "word": " that",
+          "start": 34.42,
+          "end": 34.5,
+          "probability": 0.9753634929656982
+        },
+        {
+          "word": " you",
+          "start": 34.5,
+          "end": 34.68,
+          "probability": 0.9960759282112122
+        },
+        {
+          "word": " connect",
+          "start": 34.68,
+          "end": 34.92,
+          "probability": 0.9965331554412842
+        },
+        {
+          "word": " to",
+          "start": 34.92,
+          "end": 35.12,
+          "probability": 0.9921278953552246
+        },
+        {
+          "word": " it.",
+          "start": 35.12,
+          "end": 35.8,
+          "probability": 0.9232833385467529
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 3000,
+      "start": 36.28,
+      "end": 39.82,
+      "text": " So think any software that you use for your marketing like notion,",
+      "tokens": [
+        50663,
+        1406,
+        892,
+        597,
+        3788,
+        326,
+        345,
+        779,
+        329,
+        534,
+        7124,
+        588,
+        9495,
+        11,
+        50863
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18114971047017112,
+      "compression_ratio": 1.4819277108433735,
+      "no_speech_prob": 0.009878912009298801,
+      "words": [
+        {
+          "word": " So",
+          "start": 36.28,
+          "end": 36.32,
+          "probability": 0.9308462738990784
+        },
+        {
+          "word": " think",
+          "start": 36.32,
+          "end": 36.56,
+          "probability": 0.9067248702049255
+        },
+        {
+          "word": " any",
+          "start": 36.56,
+          "end": 36.96,
+          "probability": 0.9710076451301575
+        },
+        {
+          "word": " software",
+          "start": 36.96,
+          "end": 37.08,
+          "probability": 0.9992266893386841
+        },
+        {
+          "word": " that",
+          "start": 37.08,
+          "end": 37.3,
+          "probability": 0.9367069602012634
+        },
+        {
+          "word": " you",
+          "start": 37.3,
+          "end": 37.4,
+          "probability": 0.9896036386489868
+        },
+        {
+          "word": " use",
+          "start": 37.4,
+          "end": 37.6,
+          "probability": 0.9834368228912354
+        },
+        {
+          "word": " for",
+          "start": 37.6,
+          "end": 37.76,
+          "probability": 0.9925500154495239
+        },
+        {
+          "word": " your",
+          "start": 37.76,
+          "end": 37.94,
+          "probability": 0.9892730116844177
+        },
+        {
+          "word": " marketing",
+          "start": 37.94,
+          "end": 38.34,
+          "probability": 0.900417685508728
+        },
+        {
+          "word": " like",
+          "start": 38.34,
+          "end": 39.22,
+          "probability": 0.46361997723579407
+        },
+        {
+          "word": " notion,",
+          "start": 39.22,
+          "end": 39.82,
+          "probability": 0.4354502260684967
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 3000,
+      "start": 40.88,
+      "end": 42.86,
+      "text": " your scheduling tool I use public,",
+      "tokens": [
+        50863,
+        534,
+        26925,
+        2891,
+        314,
+        779,
+        1171,
+        11,
+        51013
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18114971047017112,
+      "compression_ratio": 1.4819277108433735,
+      "no_speech_prob": 0.009878912009298801,
+      "words": [
+        {
+          "word": " your",
+          "start": 40.88,
+          "end": 40.92,
+          "probability": 0.7814577221870422
+        },
+        {
+          "word": " scheduling",
+          "start": 40.92,
+          "end": 41.2,
+          "probability": 0.9978950023651123
+        },
+        {
+          "word": " tool",
+          "start": 41.2,
+          "end": 41.78,
+          "probability": 0.9935708045959473
+        },
+        {
+          "word": " I",
+          "start": 41.78,
+          "end": 41.96,
+          "probability": 0.5736767053604126
+        },
+        {
+          "word": " use",
+          "start": 41.96,
+          "end": 42.14,
+          "probability": 0.9881091713905334
+        },
+        {
+          "word": " public,",
+          "start": 42.14,
+          "end": 42.86,
+          "probability": 0.3458024859428406
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 3000,
+      "start": 47.3,
+      "end": 50.28,
+      "text": " your Gmail or GA4 for analytics.",
+      "tokens": [
+        51213,
+        534,
+        33662,
+        393,
+        14545,
+        19,
+        329,
+        23696,
+        13,
+        51363
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18114971047017112,
+      "compression_ratio": 1.4819277108433735,
+      "no_speech_prob": 0.009878912009298801,
+      "words": [
+        {
+          "word": " your",
+          "start": 47.3,
+          "end": 47.46,
+          "probability": 0.9846066236495972
+        },
+        {
+          "word": " Gmail",
+          "start": 47.46,
+          "end": 47.78,
+          "probability": 0.9031515717506409
+        },
+        {
+          "word": " or",
+          "start": 47.78,
+          "end": 48.4,
+          "probability": 0.8708450198173523
+        },
+        {
+          "word": " GA4",
+          "start": 48.4,
+          "end": 48.96,
+          "probability": 0.9500925838947296
+        },
+        {
+          "word": " for",
+          "start": 48.96,
+          "end": 49.16,
+          "probability": 0.9847943186759949
+        },
+        {
+          "word": " analytics.",
+          "start": 49.16,
+          "end": 50.28,
+          "probability": 0.9615657329559326
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 3000,
+      "start": 53.3,
+      "end": 55.98,
+      "text": " Most marketers skip this and is the reason.",
+      "tokens": [
+        51513,
+        4042,
+        41064,
+        14267,
+        428,
+        290,
+        318,
+        262,
+        1738,
+        13,
+        51663
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18114971047017112,
+      "compression_ratio": 1.4819277108433735,
+      "no_speech_prob": 0.009878912009298801,
+      "words": [
+        {
+          "word": " Most",
+          "start": 53.3,
+          "end": 53.6,
+          "probability": 0.9818921685218811
+        },
+        {
+          "word": " marketers",
+          "start": 53.6,
+          "end": 54.0,
+          "probability": 0.9701067209243774
+        },
+        {
+          "word": " skip",
+          "start": 54.0,
+          "end": 54.4,
+          "probability": 0.9901324510574341
+        },
+        {
+          "word": " this",
+          "start": 54.4,
+          "end": 54.76,
+          "probability": 0.9973581433296204
+        },
+        {
+          "word": " and",
+          "start": 54.76,
+          "end": 54.86,
+          "probability": 0.6975900530815125
+        },
+        {
+          "word": " is",
+          "start": 54.86,
+          "end": 55.0,
+          "probability": 0.715664803981781
+        },
+        {
+          "word": " the",
+          "start": 55.0,
+          "end": 55.98,
+          "probability": 0.9986801743507385
+        },
+        {
+          "word": " reason.",
+          "start": 55.98,
+          "end": 55.98,
+          "probability": 0.9980039000511169
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 5598,
+      "start": 58.68000000000001,
+      "end": 63.98,
+      "text": " Most marketers skip this and it's the reason that they're.",
+      "tokens": [
+        50413,
+        4042,
+        41064,
+        14267,
+        428,
+        290,
+        340,
+        338,
+        262,
+        1738,
+        326,
+        484,
+        821,
+        13,
+        50613
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.21097278594970703,
+      "compression_ratio": 1.6694214876033058,
+      "no_speech_prob": 0.002047841902822256,
+      "words": [
+        {
+          "word": " Most",
+          "start": 58.68000000000001,
+          "end": 59.28,
+          "probability": 0.5688552260398865
+        },
+        {
+          "word": " marketers",
+          "start": 59.28,
+          "end": 59.58,
+          "probability": 0.6217477321624756
+        },
+        {
+          "word": " skip",
+          "start": 59.58,
+          "end": 59.9,
+          "probability": 0.8770576119422913
+        },
+        {
+          "word": " this",
+          "start": 59.9,
+          "end": 60.2,
+          "probability": 0.9841558933258057
+        },
+        {
+          "word": " and",
+          "start": 60.2,
+          "end": 60.32,
+          "probability": 0.7213261723518372
+        },
+        {
+          "word": " it's",
+          "start": 60.32,
+          "end": 60.48,
+          "probability": 0.9189033508300781
+        },
+        {
+          "word": " the",
+          "start": 60.48,
+          "end": 60.6,
+          "probability": 0.9933225512504578
+        },
+        {
+          "word": " reason",
+          "start": 60.6,
+          "end": 60.98,
+          "probability": 0.9967719912528992
+        },
+        {
+          "word": " that",
+          "start": 60.98,
+          "end": 61.32,
+          "probability": 0.9265033006668091
+        },
+        {
+          "word": " they're.",
+          "start": 61.32,
+          "end": 63.98,
+          "probability": 0.8797895908355713
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 5598,
+      "start": 63.98,
+      "end": 68.5,
+      "text": " Most marketers skip this and it's the reason that they're set up as just a chatbot.",
+      "tokens": [
+        50763,
+        4042,
+        41064,
+        14267,
+        428,
+        290,
+        340,
+        338,
+        262,
+        1738,
+        326,
+        484,
+        821,
+        900,
+        510,
+        355,
+        655,
+        257,
+        8537,
+        13645,
+        13,
+        50913
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.21097278594970703,
+      "compression_ratio": 1.6694214876033058,
+      "no_speech_prob": 0.002047841902822256,
+      "words": [
+        {
+          "word": " Most",
+          "start": 63.98,
+          "end": 64.24,
+          "probability": 0.9592410326004028
+        },
+        {
+          "word": " marketers",
+          "start": 64.24,
+          "end": 64.62,
+          "probability": 0.9740921854972839
+        },
+        {
+          "word": " skip",
+          "start": 64.62,
+          "end": 64.86,
+          "probability": 0.993524432182312
+        },
+        {
+          "word": " this",
+          "start": 64.86,
+          "end": 65.16,
+          "probability": 0.9765101671218872
+        },
+        {
+          "word": " and",
+          "start": 65.16,
+          "end": 65.26,
+          "probability": 0.9216611981391907
+        },
+        {
+          "word": " it's",
+          "start": 65.26,
+          "end": 65.42,
+          "probability": 0.9692227840423584
+        },
+        {
+          "word": " the",
+          "start": 65.42,
+          "end": 65.5,
+          "probability": 0.9932339787483215
+        },
+        {
+          "word": " reason",
+          "start": 65.5,
+          "end": 65.78,
+          "probability": 0.997554361820221
+        },
+        {
+          "word": " that",
+          "start": 65.78,
+          "end": 66.08,
+          "probability": 0.9478422999382019
+        },
+        {
+          "word": " they're",
+          "start": 66.08,
+          "end": 66.28,
+          "probability": 0.9342313706874847
+        },
+        {
+          "word": " set",
+          "start": 66.28,
+          "end": 66.42,
+          "probability": 0.879112184047699
+        },
+        {
+          "word": " up",
+          "start": 66.42,
+          "end": 66.58,
+          "probability": 0.9915212392807007
+        },
+        {
+          "word": " as",
+          "start": 66.58,
+          "end": 66.66,
+          "probability": 0.40738222002983093
+        },
+        {
+          "word": " just",
+          "start": 66.66,
+          "end": 66.9,
+          "probability": 0.9771380424499512
+        },
+        {
+          "word": " a",
+          "start": 66.9,
+          "end": 67.16,
+          "probability": 0.9375758171081543
+        },
+        {
+          "word": " chatbot.",
+          "start": 67.16,
+          "end": 68.5,
+          "probability": 0.8125232458114624
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 5598,
+      "start": 73.56,
+      "end": 74.97999999999999,
+      "text": " And not actual workflows.",
+      "tokens": [
+        51263,
+        843,
+        407,
+        4036,
+        670,
+        44041,
+        13,
+        51313
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.21097278594970703,
+      "compression_ratio": 1.6694214876033058,
+      "no_speech_prob": 0.002047841902822256,
+      "words": [
+        {
+          "word": " And",
+          "start": 73.56,
+          "end": 73.98,
+          "probability": 0.9017515778541565
+        },
+        {
+          "word": " not",
+          "start": 73.98,
+          "end": 74.3,
+          "probability": 0.9832887053489685
+        },
+        {
+          "word": " actual",
+          "start": 74.3,
+          "end": 74.7,
+          "probability": 0.9924597144126892
+        },
+        {
+          "word": " workflows.",
+          "start": 74.7,
+          "end": 75.0,
+          "probability": 0.9638341963291168
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 5598,
+      "start": 78.64,
+      "end": 80.02,
+      "text": " The number three is the playbook.",
+      "tokens": [
+        51513,
+        383,
+        1271,
+        1115,
+        318,
+        262,
+        41794,
+        13,
+        51563
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.21097278594970703,
+      "compression_ratio": 1.6694214876033058,
+      "no_speech_prob": 0.002047841902822256,
+      "words": [
+        {
+          "word": " The",
+          "start": 78.64,
+          "end": 78.76,
+          "probability": 0.5841822624206543
+        },
+        {
+          "word": " number",
+          "start": 78.76,
+          "end": 78.94,
+          "probability": 0.987885594367981
+        },
+        {
+          "word": " three",
+          "start": 78.94,
+          "end": 79.34,
+          "probability": 0.9197943210601807
+        },
+        {
+          "word": " is",
+          "start": 79.34,
+          "end": 79.5,
+          "probability": 0.9960892200469971
+        },
+        {
+          "word": " the",
+          "start": 79.5,
+          "end": 79.68,
+          "probability": 0.9947068095207214
+        },
+        {
+          "word": " playbook.",
+          "start": 79.68,
+          "end": 80.02,
+          "probability": 0.8323138952255249
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 8002,
+      "start": 82.82,
+      "end": 84.22,
+      "text": " So these are the skills.",
+      "tokens": [
+        50413,
+        1406,
+        777,
+        389,
+        262,
+        4678,
+        13,
+        50563
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.17172804013104506,
+      "compression_ratio": 1.5193370165745856,
+      "no_speech_prob": 0.017141982913017273,
+      "words": [
+        {
+          "word": " So",
+          "start": 82.82,
+          "end": 83.34,
+          "probability": 0.8310182094573975
+        },
+        {
+          "word": " these",
+          "start": 83.34,
+          "end": 83.6,
+          "probability": 0.8973620533943176
+        },
+        {
+          "word": " are",
+          "start": 83.6,
+          "end": 83.72,
+          "probability": 0.9965454936027527
+        },
+        {
+          "word": " the",
+          "start": 83.72,
+          "end": 83.9,
+          "probability": 0.9981310963630676
+        },
+        {
+          "word": " skills.",
+          "start": 83.9,
+          "end": 84.22,
+          "probability": 0.9881327748298645
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 8002,
+      "start": 84.6,
+      "end": 88.18,
+      "text": " It's one file, one run, everything done for you.",
+      "tokens": [
+        50613,
+        632,
+        338,
+        530,
+        2393,
+        11,
+        530,
+        1057,
+        11,
+        2279,
+        1760,
+        329,
+        345,
+        13,
+        50713
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.17172804013104506,
+      "compression_ratio": 1.5193370165745856,
+      "no_speech_prob": 0.017141982913017273,
+      "words": [
+        {
+          "word": " It's",
+          "start": 84.6,
+          "end": 84.84,
+          "probability": 0.9841679036617279
+        },
+        {
+          "word": " one",
+          "start": 84.84,
+          "end": 85.08,
+          "probability": 0.8363808393478394
+        },
+        {
+          "word": " file,",
+          "start": 85.08,
+          "end": 85.58,
+          "probability": 0.9810463190078735
+        },
+        {
+          "word": " one",
+          "start": 85.84,
+          "end": 85.96,
+          "probability": 0.9846791625022888
+        },
+        {
+          "word": " run,",
+          "start": 85.96,
+          "end": 86.46,
+          "probability": 0.9480758309364319
+        },
+        {
+          "word": " everything",
+          "start": 86.78,
+          "end": 86.82,
+          "probability": 0.9971526861190796
+        },
+        {
+          "word": " done",
+          "start": 86.82,
+          "end": 87.2,
+          "probability": 0.9413960576057434
+        },
+        {
+          "word": " for",
+          "start": 87.2,
+          "end": 87.42,
+          "probability": 0.9956167936325073
+        },
+        {
+          "word": " you.",
+          "start": 87.42,
+          "end": 88.18,
+          "probability": 0.9976902008056641
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 8002,
+      "start": 89.92,
+      "end": 92.1,
+      "text": " The number four is the guard rails.",
+      "tokens": [
+        50863,
+        383,
+        1271,
+        1440,
+        318,
+        262,
+        4860,
+        27587,
+        13,
+        50963
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.17172804013104506,
+      "compression_ratio": 1.5193370165745856,
+      "no_speech_prob": 0.017141982913017273,
+      "words": [
+        {
+          "word": " The",
+          "start": 89.92,
+          "end": 90.06,
+          "probability": 0.8349900245666504
+        },
+        {
+          "word": " number",
+          "start": 90.06,
+          "end": 90.3,
+          "probability": 0.9928551316261292
+        },
+        {
+          "word": " four",
+          "start": 90.3,
+          "end": 90.96,
+          "probability": 0.9524054527282715
+        },
+        {
+          "word": " is",
+          "start": 90.96,
+          "end": 91.14,
+          "probability": 0.9885451197624207
+        },
+        {
+          "word": " the",
+          "start": 91.14,
+          "end": 91.36,
+          "probability": 0.9931043982505798
+        },
+        {
+          "word": " guard",
+          "start": 91.36,
+          "end": 91.54,
+          "probability": 0.9555656313896179
+        },
+        {
+          "word": " rails.",
+          "start": 91.54,
+          "end": 92.1,
+          "probability": 0.619731605052948
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 8002,
+      "start": 95.5,
+      "end": 102.68,
+      "text": " These are hooks that block any band words that you want or it tells it exactly how you like to talk and write.",
+      "tokens": [
+        51163,
+        2312,
+        389,
+        26569,
+        326,
+        2512,
+        597,
+        4097,
+        2456,
+        326,
+        345,
+        765,
+        393,
+        340,
+        4952,
+        340,
+        3446,
+        703,
+        345,
+        588,
+        284,
+        1561,
+        290,
+        3551,
+        13,
+        51413
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.17172804013104506,
+      "compression_ratio": 1.5193370165745856,
+      "no_speech_prob": 0.017141982913017273,
+      "words": [
+        {
+          "word": " These",
+          "start": 95.5,
+          "end": 95.96,
+          "probability": 0.5101244449615479
+        },
+        {
+          "word": " are",
+          "start": 95.96,
+          "end": 96.16,
+          "probability": 0.9986451268196106
+        },
+        {
+          "word": " hooks",
+          "start": 96.16,
+          "end": 96.4,
+          "probability": 0.9745408892631531
+        },
+        {
+          "word": " that",
+          "start": 96.4,
+          "end": 96.64,
+          "probability": 0.9984984397888184
+        },
+        {
+          "word": " block",
+          "start": 96.64,
+          "end": 96.82,
+          "probability": 0.9928392171859741
+        },
+        {
+          "word": " any",
+          "start": 96.82,
+          "end": 97.08,
+          "probability": 0.9970378875732422
+        },
+        {
+          "word": " band",
+          "start": 97.08,
+          "end": 97.4,
+          "probability": 0.6557178497314453
+        },
+        {
+          "word": " words",
+          "start": 97.4,
+          "end": 97.62,
+          "probability": 0.9194163084030151
+        },
+        {
+          "word": " that",
+          "start": 97.62,
+          "end": 97.74,
+          "probability": 0.9861437082290649
+        },
+        {
+          "word": " you",
+          "start": 97.74,
+          "end": 97.9,
+          "probability": 0.9992538094520569
+        },
+        {
+          "word": " want",
+          "start": 97.9,
+          "end": 98.26,
+          "probability": 0.9991242289543152
+        },
+        {
+          "word": " or",
+          "start": 98.26,
+          "end": 98.84,
+          "probability": 0.46919915080070496
+        },
+        {
+          "word": " it",
+          "start": 98.84,
+          "end": 99.04,
+          "probability": 0.9874815344810486
+        },
+        {
+          "word": " tells",
+          "start": 99.04,
+          "end": 99.18,
+          "probability": 0.996454119682312
+        },
+        {
+          "word": " it",
+          "start": 99.18,
+          "end": 99.38,
+          "probability": 0.4353313148021698
+        },
+        {
+          "word": " exactly",
+          "start": 99.38,
+          "end": 99.94,
+          "probability": 0.8968144059181213
+        },
+        {
+          "word": " how",
+          "start": 99.94,
+          "end": 100.76,
+          "probability": 0.98457932472229
+        },
+        {
+          "word": " you",
+          "start": 100.76,
+          "end": 101.18,
+          "probability": 0.997092604637146
+        },
+        {
+          "word": " like",
+          "start": 101.18,
+          "end": 101.38,
+          "probability": 0.9920119643211365
+        },
+        {
+          "word": " to",
+          "start": 101.38,
+          "end": 101.58,
+          "probability": 0.9965457320213318
+        },
+        {
+          "word": " talk",
+          "start": 101.58,
+          "end": 101.92,
+          "probability": 0.9976551532745361
+        },
+        {
+          "word": " and",
+          "start": 101.92,
+          "end": 102.16,
+          "probability": 0.9756680130958557
+        },
+        {
+          "word": " write.",
+          "start": 102.16,
+          "end": 102.68,
+          "probability": 0.9801933169364929
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 8002,
+      "start": 102.98,
+      "end": 106.14,
+      "text": " So it always references that before shipping anything.",
+      "tokens": [
+        51513,
+        1406,
+        340,
+        1464,
+        10288,
+        326,
+        878,
+        8440,
+        1997,
+        13,
+        51663
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.17172804013104506,
+      "compression_ratio": 1.5193370165745856,
+      "no_speech_prob": 0.017141982913017273,
+      "words": [
+        {
+          "word": " So",
+          "start": 102.98,
+          "end": 103.08,
+          "probability": 0.9930476546287537
+        },
+        {
+          "word": " it",
+          "start": 103.08,
+          "end": 103.36,
+          "probability": 0.9699078798294067
+        },
+        {
+          "word": " always",
+          "start": 103.36,
+          "end": 103.62,
+          "probability": 0.9983311295509338
+        },
+        {
+          "word": " references",
+          "start": 103.62,
+          "end": 103.96,
+          "probability": 0.9973300695419312
+        },
+        {
+          "word": " that",
+          "start": 103.96,
+          "end": 104.7,
+          "probability": 0.9975723624229431
+        },
+        {
+          "word": " before",
+          "start": 104.7,
+          "end": 105.48,
+          "probability": 0.9941818118095398
+        },
+        {
+          "word": " shipping",
+          "start": 105.48,
+          "end": 105.76,
+          "probability": 0.9857214689254761
+        },
+        {
+          "word": " anything.",
+          "start": 105.76,
+          "end": 106.14,
+          "probability": 0.9936423301696777
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 11002,
+      "start": 111.06,
+      "end": 114.02,
+      "text": " Run all four and you'll be a top vibe marketer.",
+      "tokens": [
+        50413,
+        5660,
+        477,
+        1440,
+        290,
+        345,
+        1183,
+        307,
+        257,
+        1353,
+        27426,
+        1910,
+        263,
+        13,
+        50563
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13033733367919922,
+      "compression_ratio": 1.3758389261744965,
+      "no_speech_prob": 0.005014951340854168,
+      "words": [
+        {
+          "word": " Run",
+          "start": 111.06,
+          "end": 111.5,
+          "probability": 0.6760737895965576
+        },
+        {
+          "word": " all",
+          "start": 111.5,
+          "end": 111.7,
+          "probability": 0.9420179724693298
+        },
+        {
+          "word": " four",
+          "start": 111.7,
+          "end": 112.02,
+          "probability": 0.7574052810668945
+        },
+        {
+          "word": " and",
+          "start": 112.02,
+          "end": 112.14,
+          "probability": 0.8093702793121338
+        },
+        {
+          "word": " you'll",
+          "start": 112.14,
+          "end": 112.32,
+          "probability": 0.9636256396770477
+        },
+        {
+          "word": " be",
+          "start": 112.32,
+          "end": 112.46,
+          "probability": 0.9978347420692444
+        },
+        {
+          "word": " a",
+          "start": 112.46,
+          "end": 112.64,
+          "probability": 0.9505809545516968
+        },
+        {
+          "word": " top",
+          "start": 112.64,
+          "end": 113.02,
+          "probability": 0.9749341011047363
+        },
+        {
+          "word": " vibe",
+          "start": 113.02,
+          "end": 113.4,
+          "probability": 0.7292701601982117
+        },
+        {
+          "word": " marketer.",
+          "start": 113.4,
+          "end": 114.02,
+          "probability": 0.9640252590179443
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "seek": 11002,
+      "start": 118.12,
+      "end": 121.5,
+      "text": " All your workflows automated, saving you hours of time.",
+      "tokens": [
+        50763,
+        1439,
+        534,
+        670,
+        44041,
+        16359,
+        11,
+        8914,
+        345,
+        2250,
+        286,
+        640,
+        13,
+        50913
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13033733367919922,
+      "compression_ratio": 1.3758389261744965,
+      "no_speech_prob": 0.005014951340854168,
+      "words": [
+        {
+          "word": " All",
+          "start": 118.12,
+          "end": 118.56,
+          "probability": 0.9755125641822815
+        },
+        {
+          "word": " your",
+          "start": 118.56,
+          "end": 118.7,
+          "probability": 0.9640757441520691
+        },
+        {
+          "word": " workflows",
+          "start": 118.7,
+          "end": 119.1,
+          "probability": 0.8044469356536865
+        },
+        {
+          "word": " automated,",
+          "start": 119.1,
+          "end": 119.54,
+          "probability": 0.9606403112411499
+        },
+        {
+          "word": " saving",
+          "start": 119.9,
+          "end": 120.04,
+          "probability": 0.9467195272445679
+        },
+        {
+          "word": " you",
+          "start": 120.04,
+          "end": 120.4,
+          "probability": 0.9986315369606018
+        },
+        {
+          "word": " hours",
+          "start": 120.4,
+          "end": 120.72,
+          "probability": 0.9947547912597656
+        },
+        {
+          "word": " of",
+          "start": 120.72,
+          "end": 120.98,
+          "probability": 0.9964683055877686
+        },
+        {
+          "word": " time.",
+          "start": 120.98,
+          "end": 121.5,
+          "probability": 0.9995061159133911
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "seek": 11002,
+      "start": 123.34,
+      "end": 126.1,
+      "text": " And all of this is free in my 100x marketer community,",
+      "tokens": [
+        51013,
+        843,
+        477,
+        286,
+        428,
+        318,
+        1479,
+        287,
+        616,
+        1802,
+        87,
+        1910,
+        263,
+        2055,
+        11,
+        51163
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13033733367919922,
+      "compression_ratio": 1.3758389261744965,
+      "no_speech_prob": 0.005014951340854168,
+      "words": [
+        {
+          "word": " And",
+          "start": 123.34,
+          "end": 123.5,
+          "probability": 0.8882434964179993
+        },
+        {
+          "word": " all",
+          "start": 123.5,
+          "end": 123.68,
+          "probability": 0.9902291297912598
+        },
+        {
+          "word": " of",
+          "start": 123.68,
+          "end": 123.76,
+          "probability": 0.6096979379653931
+        },
+        {
+          "word": " this",
+          "start": 123.76,
+          "end": 123.88,
+          "probability": 0.99480801820755
+        },
+        {
+          "word": " is",
+          "start": 123.88,
+          "end": 124.08,
+          "probability": 0.9973375201225281
+        },
+        {
+          "word": " free",
+          "start": 124.08,
+          "end": 124.3,
+          "probability": 0.9970200657844543
+        },
+        {
+          "word": " in",
+          "start": 124.3,
+          "end": 124.46,
+          "probability": 0.9354474544525146
+        },
+        {
+          "word": " my",
+          "start": 124.46,
+          "end": 124.74,
+          "probability": 0.9888079762458801
+        },
+        {
+          "word": " 100x",
+          "start": 124.74,
+          "end": 125.3,
+          "probability": 0.6211650371551514
+        },
+        {
+          "word": " marketer",
+          "start": 125.3,
+          "end": 125.68,
+          "probability": 0.9372774064540863
+        },
+        {
+          "word": " community,",
+          "start": 125.68,
+          "end": 126.1,
+          "probability": 0.9836233258247375
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "seek": 11002,
+      "start": 126.38,
+      "end": 128.18,
+      "text": " where you can get going to the link in my bio.",
+      "tokens": [
+        51163,
+        810,
+        345,
+        460,
+        651,
+        1016,
+        284,
+        262,
+        2792,
+        287,
+        616,
+        13401,
+        13,
+        51263
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.13033733367919922,
+      "compression_ratio": 1.3758389261744965,
+      "no_speech_prob": 0.005014951340854168,
+      "words": [
+        {
+          "word": " where",
+          "start": 126.38,
+          "end": 126.46,
+          "probability": 0.6928551197052002
+        },
+        {
+          "word": " you",
+          "start": 126.46,
+          "end": 126.58,
+          "probability": 0.9982902407646179
+        },
+        {
+          "word": " can",
+          "start": 126.58,
+          "end": 126.76,
+          "probability": 0.9941307902336121
+        },
+        {
+          "word": " get",
+          "start": 126.76,
+          "end": 127.1,
+          "probability": 0.9150794148445129
+        },
+        {
+          "word": " going",
+          "start": 127.1,
+          "end": 127.28,
+          "probability": 0.8010647892951965
+        },
+        {
+          "word": " to",
+          "start": 127.28,
+          "end": 127.44,
+          "probability": 0.943098783493042
+        },
+        {
+          "word": " the",
+          "start": 127.44,
+          "end": 127.52,
+          "probability": 0.9927790760993958
+        },
+        {
+          "word": " link",
+          "start": 127.52,
+          "end": 127.68,
+          "probability": 0.9963106513023376
+        },
+        {
+          "word": " in",
+          "start": 127.68,
+          "end": 127.8,
+          "probability": 0.9788779616355896
+        },
+        {
+          "word": " my",
+          "start": 127.8,
+          "end": 127.96,
+          "probability": 0.9939451813697815
+        },
+        {
+          "word": " bio.",
+          "start": 127.96,
+          "end": 128.18,
+          "probability": 0.9693642854690552
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

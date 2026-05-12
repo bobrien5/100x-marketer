@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Content Strategist, what is working</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Content Strategist</h1>
+    <p id="meta">loading…</p>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Top hooks by engagement rate</h2>
+      <canvas id="hooksChart"></canvas>
+      <table id="hooksTable"></table>
+    </div>
+    <div class="card">
+      <h2>Top content formats</h2>
+      <canvas id="formatsChart"></canvas>
+      <table id="formatsTable"></table>
+    </div>
+    <div class="card">
+      <h2>Top CTAs</h2>
+      <canvas id="ctasChart"></canvas>
+      <table id="ctasTable"></table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Top performing posts</h2>
+    <table id="topPosts"></table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

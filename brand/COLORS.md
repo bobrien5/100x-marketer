@@ -12,7 +12,8 @@ If a tool or skill needs colors, it reads this file. Don't hard-code hex values 
 |---|---|---|
 | `--brand-black` | `#0a0a0a` | Backgrounds, terminal base, full-bleed text panels. Default video background. |
 | `--brand-green` | `#39ff14` | Primary accent. Headlines, prompt highlights, CTA card brand mark. The "100x" green. |
-| `--brand-white` | `#ffffff` | Body text on dark backgrounds, captions, secondary headlines. |
+| `--brand-orange` | `#ff6b00` | Caption / on-screen-text accent for short-form video. Word-by-word captions over body, with thick black stroke. Use when high readability over live footage matters more than the terminal aesthetic. |
+| `--brand-white` | `#ffffff` | Body text on dark backgrounds, secondary headlines. |
 
 ## Supporting palette
 

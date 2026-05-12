@@ -1,0 +1,172 @@
+{
+  "runs": [
+    {
+      "src_in": 0.0,
+      "src_out": 5.0,
+      "out_start": 0,
+      "out_end": 5.0,
+      "text": "So every Claude code setup that saves you hours has these four parts."
+    },
+    {
+      "src_in": 12.120000000000001,
+      "src_out": 14.200000000000001,
+      "out_start": 5.0,
+      "out_end": 7.08,
+      "text": "Number one is the"
+    },
+    {
+      "src_in": 15.2,
+      "src_out": 15.6,
+      "out_start": 7.08,
+      "out_end": 7.48,
+      "text": "brief."
+    },
+    {
+      "src_in": 18.060000000000002,
+      "src_out": 23.119999999999997,
+      "out_start": 7.48,
+      "out_end": 12.539999999999996,
+      "text": "So the brief is a markdown file that tells Claude code exactly how you want to work."
+    },
+    {
+      "src_in": 25.74,
+      "src_out": 27.94,
+      "out_start": 12.539999999999996,
+      "out_end": 14.739999999999998,
+      "text": "And act as your marketing operator."
+    },
+    {
+      "src_in": 31.16,
+      "src_out": 35.8,
+      "out_start": 14.739999999999998,
+      "out_end": 19.379999999999995,
+      "text": "Two is the tool belt and these are the MCPs that you connect to it."
+    },
+    {
+      "src_in": 36.28,
+      "src_out": 39.82,
+      "out_start": 19.379999999999995,
+      "out_end": 22.919999999999995,
+      "text": "So think any software that you use for your marketing like notion,"
+    },
+    {
+      "src_in": 40.88,
+      "src_out": 42.86,
+      "out_start": 22.919999999999995,
+      "out_end": 24.89999999999999,
+      "text": "your scheduling tool I use public,"
+    },
+    {
+      "src_in": 47.3,
+      "src_out": 49.959999999999994,
+      "out_start": 24.89999999999999,
+      "out_end": 27.559999999999988,
+      "text": "your Gmail or GA4 for analytics."
+    },
+    {
+      "src_in": 63.98,
+      "src_out": 67.96,
+      "out_start": 27.559999999999988,
+      "out_end": 31.539999999999985,
+      "text": "Most marketers skip this and it's the reason that they're set up as just a chatbot."
+    },
+    {
+      "src_in": 73.56,
+      "src_out": 75.10000000000001,
+      "out_start": 31.539999999999985,
+      "out_end": 33.07999999999999,
+      "text": "And not actual workflows."
+    },
+    {
+      "src_in": 78.64,
+      "src_out": 80.08000000000001,
+      "out_start": 33.07999999999999,
+      "out_end": 34.52,
+      "text": "The number three is the playbook."
+    },
+    {
+      "src_in": 82.82,
+      "src_out": 84.30000000000001,
+      "out_start": 34.52,
+      "out_end": 36.00000000000002,
+      "text": "So these are the skills."
+    },
+    {
+      "src_in": 84.6,
+      "src_out": 85.58,
+      "out_start": 36.00000000000002,
+      "out_end": 36.980000000000025,
+      "text": "It's one file,"
+    },
+    {
+      "src_in": 85.84,
+      "src_out": 86.46,
+      "out_start": 36.980000000000025,
+      "out_end": 37.600000000000016,
+      "text": "one run,"
+    },
+    {
+      "src_in": 86.78,
+      "src_out": 88.18,
+      "out_start": 37.600000000000016,
+      "out_end": 39.00000000000002,
+      "text": "everything done for you."
+    },
+    {
+      "src_in": 89.92,
+      "src_out": 92.1,
+      "out_start": 39.00000000000002,
+      "out_end": 41.180000000000014,
+      "text": "The number four is the guard rails."
+    },
+    {
+      "src_in": 95.5,
+      "src_out": 102.68,
+      "out_start": 41.180000000000014,
+      "out_end": 48.36000000000002,
+      "text": "These are hooks that block any band words that you want or it tells it exactly how you like to talk and write."
+    },
+    {
+      "src_in": 102.98,
+      "src_out": 106.16000000000001,
+      "out_start": 48.36000000000002,
+      "out_end": 51.54000000000003,
+      "text": "So it always references that before shipping anything."
+    },
+    {
+      "src_in": 111.06,
+      "src_out": 114.02,
+      "out_start": 51.54000000000003,
+      "out_end": 54.50000000000002,
+      "text": "Run all four and you'll be a top vibe marketer."
+    },
+    {
+      "src_in": 118.12,
+      "src_out": 119.54,
+      "out_start": 54.50000000000002,
+      "out_end": 55.92000000000002,
+      "text": "All your workflows automated,"
+    },
+    {
+      "src_in": 119.9,
+      "src_out": 121.5,
+      "out_start": 55.92000000000002,
+      "out_end": 57.52000000000002,
+      "text": "saving you hours of time."
+    },
+    {
+      "src_in": 123.34,
+      "src_out": 126.1,
+      "out_start": 57.52000000000002,
+      "out_end": 60.28000000000001,
+      "text": "And all of this is free in my 100x marketer community,"
+    },
+    {
+      "src_in": 126.38,
+      "src_out": 128.35999999999999,
+      "out_start": 60.28000000000001,
+      "out_end": 62.26,
+      "text": "where you can get going to the link in my bio."
+    }
+  ]
+}

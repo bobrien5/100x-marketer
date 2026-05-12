@@ -1,0 +1,783 @@
+{
+  "text": " Pause this video and copy this prompt. This is what runs my Monday morning content every week. This skill scans my competitors, pulls in trending hooks, and pitches me three briefs ready to shoot. 11 minutes, that's all it takes me now. I used to spend three hours doing this every Monday morning going through researching content and creating scripts from my videos. But now I do it all with Thibe marketing. The skill, the brand profile, and the prompt are all free in my 100x marker",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 3.64,
+      "text": " Pause this video and copy this prompt.",
+      "tokens": [
+        50363,
+        350,
+        682,
+        428,
+        2008,
+        290,
+        4866,
+        428,
+        6152,
+        13,
+        50749
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2416877065386091,
+      "compression_ratio": 1.3253968253968254,
+      "no_speech_prob": 0.0945136696100235,
+      "words": [
+        {
+          "word": " Pause",
+          "start": 0.0,
+          "end": 0.78,
+          "probability": 0.6774412393569946
+        },
+        {
+          "word": " this",
+          "start": 0.78,
+          "end": 0.98,
+          "probability": 0.9849853515625
+        },
+        {
+          "word": " video",
+          "start": 0.98,
+          "end": 1.32,
+          "probability": 0.9980350136756897
+        },
+        {
+          "word": " and",
+          "start": 1.32,
+          "end": 1.6,
+          "probability": 0.9017939567565918
+        },
+        {
+          "word": " copy",
+          "start": 1.6,
+          "end": 1.84,
+          "probability": 0.9946458339691162
+        },
+        {
+          "word": " this",
+          "start": 1.84,
+          "end": 2.18,
+          "probability": 0.9853419065475464
+        },
+        {
+          "word": " prompt.",
+          "start": 2.18,
+          "end": 3.64,
+          "probability": 0.9974367022514343
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 7.4,
+      "end": 13.7,
+      "text": " This is what runs my Monday morning content every week.",
+      "tokens": [
+        50749,
+        770,
+        318,
+        644,
+        4539,
+        616,
+        3321,
+        3329,
+        2695,
+        790,
+        1285,
+        13,
+        51379
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2416877065386091,
+      "compression_ratio": 1.3253968253968254,
+      "no_speech_prob": 0.0945136696100235,
+      "words": [
+        {
+          "word": " This",
+          "start": 7.4,
+          "end": 7.84,
+          "probability": 0.969083845615387
+        },
+        {
+          "word": " is",
+          "start": 7.84,
+          "end": 7.96,
+          "probability": 0.994946300983429
+        },
+        {
+          "word": " what",
+          "start": 7.96,
+          "end": 8.18,
+          "probability": 0.993961751461029
+        },
+        {
+          "word": " runs",
+          "start": 8.18,
+          "end": 8.48,
+          "probability": 0.9951463341712952
+        },
+        {
+          "word": " my",
+          "start": 8.48,
+          "end": 8.76,
+          "probability": 0.9745161533355713
+        },
+        {
+          "word": " Monday",
+          "start": 8.76,
+          "end": 9.1,
+          "probability": 0.9850465059280396
+        },
+        {
+          "word": " morning",
+          "start": 9.1,
+          "end": 9.44,
+          "probability": 0.7403483986854553
+        },
+        {
+          "word": " content",
+          "start": 9.44,
+          "end": 9.94,
+          "probability": 0.9951022863388062
+        },
+        {
+          "word": " every",
+          "start": 9.94,
+          "end": 10.24,
+          "probability": 0.9842442870140076
+        },
+        {
+          "word": " week.",
+          "start": 10.24,
+          "end": 13.7,
+          "probability": 0.9983609318733215
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 20.32,
+      "end": 29.98,
+      "text": " This skill scans my competitors, pulls in trending hooks, and pitches me",
+      "tokens": [
+        51379,
+        770,
+        5032,
+        23824,
+        616,
+        13861,
+        11,
+        16194,
+        287,
+        29056,
+        26569,
+        11,
+        290,
+        22421,
+        502,
+        51855
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.2416877065386091,
+      "compression_ratio": 1.3253968253968254,
+      "no_speech_prob": 0.0945136696100235,
+      "words": [
+        {
+          "word": " This",
+          "start": 20.14,
+          "end": 20.48,
+          "probability": 0.8866429924964905
+        },
+        {
+          "word": " skill",
+          "start": 20.48,
+          "end": 20.9,
+          "probability": 0.5479768514633179
+        },
+        {
+          "word": " scans",
+          "start": 20.9,
+          "end": 21.54,
+          "probability": 0.3951954245567322
+        },
+        {
+          "word": " my",
+          "start": 21.54,
+          "end": 23.2,
+          "probability": 0.9962756633758545
+        },
+        {
+          "word": " competitors,",
+          "start": 23.2,
+          "end": 23.2,
+          "probability": 0.9938300251960754
+        },
+        {
+          "word": " pulls",
+          "start": 24.94,
+          "end": 25.14,
+          "probability": 0.7582100629806519
+        },
+        {
+          "word": " in",
+          "start": 25.14,
+          "end": 25.42,
+          "probability": 0.9685209393501282
+        },
+        {
+          "word": " trending",
+          "start": 25.42,
+          "end": 25.76,
+          "probability": 0.9642217755317688
+        },
+        {
+          "word": " hooks,",
+          "start": 25.76,
+          "end": 26.54,
+          "probability": 0.9864547252655029
+        },
+        {
+          "word": " and",
+          "start": 29.04,
+          "end": 29.54,
+          "probability": 0.9925298094749451
+        },
+        {
+          "word": " pitches",
+          "start": 29.54,
+          "end": 29.72,
+          "probability": 0.9775192737579346
+        },
+        {
+          "word": " me",
+          "start": 29.72,
+          "end": 29.98,
+          "probability": 0.9898382425308228
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 2998,
+      "start": 29.98,
+      "end": 32.58,
+      "text": " three briefs ready to shoot.",
+      "tokens": [
+        50363,
+        1115,
+        50011,
+        3492,
+        284,
+        2686,
+        13,
+        50615
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3640105450739626,
+      "compression_ratio": 1.4176470588235295,
+      "no_speech_prob": 0.2353707253932953,
+      "words": [
+        {
+          "word": " three",
+          "start": 29.98,
+          "end": 30.48,
+          "probability": 0.5564006567001343
+        },
+        {
+          "word": " briefs",
+          "start": 30.48,
+          "end": 31.02,
+          "probability": 0.9922112226486206
+        },
+        {
+          "word": " ready",
+          "start": 31.02,
+          "end": 31.34,
+          "probability": 0.8012853860855103
+        },
+        {
+          "word": " to",
+          "start": 31.34,
+          "end": 32.58,
+          "probability": 0.9976933598518372
+        },
+        {
+          "word": " shoot.",
+          "start": 32.58,
+          "end": 32.58,
+          "probability": 0.9929783940315247
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 2998,
+      "start": 34.8,
+      "end": 38.06,
+      "text": " 11 minutes, that's all it takes me now.",
+      "tokens": [
+        50615,
+        1367,
+        2431,
+        11,
+        326,
+        338,
+        477,
+        340,
+        2753,
+        502,
+        783,
+        13,
+        50849
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3640105450739626,
+      "compression_ratio": 1.4176470588235295,
+      "no_speech_prob": 0.2353707253932953,
+      "words": [
+        {
+          "word": " 11",
+          "start": 34.8,
+          "end": 35.36,
+          "probability": 0.7030442953109741
+        },
+        {
+          "word": " minutes,",
+          "start": 35.36,
+          "end": 35.72,
+          "probability": 0.9890047907829285
+        },
+        {
+          "word": " that's",
+          "start": 35.92,
+          "end": 36.18,
+          "probability": 0.9931086599826813
+        },
+        {
+          "word": " all",
+          "start": 36.18,
+          "end": 36.28,
+          "probability": 0.997245192527771
+        },
+        {
+          "word": " it",
+          "start": 36.28,
+          "end": 36.42,
+          "probability": 0.9907858371734619
+        },
+        {
+          "word": " takes",
+          "start": 36.42,
+          "end": 36.68,
+          "probability": 0.9987950325012207
+        },
+        {
+          "word": " me",
+          "start": 36.68,
+          "end": 36.82,
+          "probability": 0.9986469149589539
+        },
+        {
+          "word": " now.",
+          "start": 36.82,
+          "end": 38.06,
+          "probability": 0.9787923693656921
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 2998,
+      "start": 39.34,
+      "end": 43.34,
+      "text": " I used to spend three hours doing this every Monday morning going through",
+      "tokens": [
+        50849,
+        314,
+        973,
+        284,
+        4341,
+        1115,
+        2250,
+        1804,
+        428,
+        790,
+        3321,
+        3329,
+        1016,
+        832,
+        51023
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3640105450739626,
+      "compression_ratio": 1.4176470588235295,
+      "no_speech_prob": 0.2353707253932953,
+      "words": [
+        {
+          "word": " I",
+          "start": 39.34,
+          "end": 39.9,
+          "probability": 0.9914050102233887
+        },
+        {
+          "word": " used",
+          "start": 39.9,
+          "end": 40.1,
+          "probability": 0.8938443064689636
+        },
+        {
+          "word": " to",
+          "start": 40.1,
+          "end": 40.24,
+          "probability": 0.9988364577293396
+        },
+        {
+          "word": " spend",
+          "start": 40.24,
+          "end": 40.5,
+          "probability": 0.9996373653411865
+        },
+        {
+          "word": " three",
+          "start": 40.5,
+          "end": 41.0,
+          "probability": 0.8489188551902771
+        },
+        {
+          "word": " hours",
+          "start": 41.0,
+          "end": 41.24,
+          "probability": 0.9998831748962402
+        },
+        {
+          "word": " doing",
+          "start": 41.24,
+          "end": 41.44,
+          "probability": 0.9984234571456909
+        },
+        {
+          "word": " this",
+          "start": 41.44,
+          "end": 41.7,
+          "probability": 0.9989835619926453
+        },
+        {
+          "word": " every",
+          "start": 41.7,
+          "end": 41.94,
+          "probability": 0.9898646473884583
+        },
+        {
+          "word": " Monday",
+          "start": 41.94,
+          "end": 42.18,
+          "probability": 0.9880810976028442
+        },
+        {
+          "word": " morning",
+          "start": 42.18,
+          "end": 42.62,
+          "probability": 0.9952321648597717
+        },
+        {
+          "word": " going",
+          "start": 42.62,
+          "end": 42.86,
+          "probability": 0.8208510279655457
+        },
+        {
+          "word": " through",
+          "start": 42.86,
+          "end": 43.34,
+          "probability": 0.9987215399742126
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 2998,
+      "start": 43.34,
+      "end": 46.86,
+      "text": " researching content and creating scripts from my videos.",
+      "tokens": [
+        51023,
+        24114,
+        2695,
+        290,
+        4441,
+        14750,
+        422,
+        616,
+        5861,
+        13,
+        51395
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3640105450739626,
+      "compression_ratio": 1.4176470588235295,
+      "no_speech_prob": 0.2353707253932953,
+      "words": [
+        {
+          "word": " researching",
+          "start": 43.34,
+          "end": 43.72,
+          "probability": 0.8512570858001709
+        },
+        {
+          "word": " content",
+          "start": 43.72,
+          "end": 44.24,
+          "probability": 0.997058629989624
+        },
+        {
+          "word": " and",
+          "start": 44.24,
+          "end": 44.64,
+          "probability": 0.981696367263794
+        },
+        {
+          "word": " creating",
+          "start": 44.64,
+          "end": 44.9,
+          "probability": 0.9980904459953308
+        },
+        {
+          "word": " scripts",
+          "start": 44.9,
+          "end": 45.26,
+          "probability": 0.9959269165992737
+        },
+        {
+          "word": " from",
+          "start": 45.26,
+          "end": 45.48,
+          "probability": 0.3915930986404419
+        },
+        {
+          "word": " my",
+          "start": 45.48,
+          "end": 45.64,
+          "probability": 0.9971168041229248
+        },
+        {
+          "word": " videos.",
+          "start": 45.64,
+          "end": 46.86,
+          "probability": 0.9984251260757446
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 2998,
+      "start": 50.34,
+      "end": 52.92,
+      "text": " But now I do it all with Thibe marketing.",
+      "tokens": [
+        51395,
+        887,
+        783,
+        314,
+        466,
+        340,
+        477,
+        351,
+        536,
+        32438,
+        7124,
+        13,
+        51695
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3640105450739626,
+      "compression_ratio": 1.4176470588235295,
+      "no_speech_prob": 0.2353707253932953,
+      "words": [
+        {
+          "word": " But",
+          "start": 50.34,
+          "end": 50.9,
+          "probability": 0.9312273859977722
+        },
+        {
+          "word": " now",
+          "start": 50.9,
+          "end": 51.2,
+          "probability": 0.9908092021942139
+        },
+        {
+          "word": " I",
+          "start": 51.2,
+          "end": 51.38,
+          "probability": 0.8726654052734375
+        },
+        {
+          "word": " do",
+          "start": 51.38,
+          "end": 51.54,
+          "probability": 0.9979998469352722
+        },
+        {
+          "word": " it",
+          "start": 51.54,
+          "end": 51.68,
+          "probability": 0.9947051405906677
+        },
+        {
+          "word": " all",
+          "start": 51.68,
+          "end": 51.94,
+          "probability": 0.9922773838043213
+        },
+        {
+          "word": " with",
+          "start": 51.94,
+          "end": 52.18,
+          "probability": 0.9976527094841003
+        },
+        {
+          "word": " Thibe",
+          "start": 52.18,
+          "end": 52.5,
+          "probability": 0.16394860297441483
+        },
+        {
+          "word": " marketing.",
+          "start": 52.5,
+          "end": 52.92,
+          "probability": 0.6455549001693726
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 5998,
+      "start": 66.12,
+      "end": 72.9,
+      "text": " The skill, the brand profile, and the prompt are all free in my 100x marker",
+      "tokens": [
+        50363,
+        383,
+        5032,
+        11,
+        262,
+        4508,
+        7034,
+        11,
+        290,
+        262,
+        6152,
+        389,
+        477,
+        1479,
+        287,
+        616,
+        1802,
+        87,
+        18364,
+        51007
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3135314637964422,
+      "compression_ratio": 1.0273972602739727,
+      "no_speech_prob": 0.03665821999311447,
+      "words": [
+        {
+          "word": " The",
+          "start": 66.12,
+          "end": 66.64,
+          "probability": 0.7776262164115906
+        },
+        {
+          "word": " skill,",
+          "start": 66.64,
+          "end": 67.0,
+          "probability": 0.9320279955863953
+        },
+        {
+          "word": " the",
+          "start": 69.02,
+          "end": 69.06,
+          "probability": 0.9762179851531982
+        },
+        {
+          "word": " brand",
+          "start": 69.06,
+          "end": 69.32,
+          "probability": 0.49603474140167236
+        },
+        {
+          "word": " profile,",
+          "start": 69.32,
+          "end": 69.86,
+          "probability": 0.995514452457428
+        },
+        {
+          "word": " and",
+          "start": 70.2,
+          "end": 70.34,
+          "probability": 0.9710133075714111
+        },
+        {
+          "word": " the",
+          "start": 70.34,
+          "end": 70.5,
+          "probability": 0.9886006712913513
+        },
+        {
+          "word": " prompt",
+          "start": 70.5,
+          "end": 70.76,
+          "probability": 0.9657889604568481
+        },
+        {
+          "word": " are",
+          "start": 70.76,
+          "end": 71.12,
+          "probability": 0.9325363039970398
+        },
+        {
+          "word": " all",
+          "start": 71.12,
+          "end": 71.38,
+          "probability": 0.9960694313049316
+        },
+        {
+          "word": " free",
+          "start": 71.38,
+          "end": 71.68,
+          "probability": 0.9773616194725037
+        },
+        {
+          "word": " in",
+          "start": 71.68,
+          "end": 71.86,
+          "probability": 0.9822998642921448
+        },
+        {
+          "word": " my",
+          "start": 71.86,
+          "end": 72.08,
+          "probability": 0.9737116694450378
+        },
+        {
+          "word": " 100x",
+          "start": 72.08,
+          "end": 72.66,
+          "probability": 0.6532305479049683
+        },
+        {
+          "word": " marker",
+          "start": 72.66,
+          "end": 72.9,
+          "probability": 0.4914718270301819
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

@@ -9,3 +9,38 @@ node_modules/
 .idea/
 *.tmp
 *.swp
+
+# Large video/audio render outputs (regenerate, don't commit)
+Raw videos/
+content/edits/**/*.mp4
+content/edits/**/*.mov
+content/edits/**/*.wav
+content/edits/**/*.mp3
+content/edits/**/*.aac
+content/edits/**/.thumbnails/
+content/edits/**/.waveform-cache/
+content/edits/**/compositions/
+
+# Keep the source/spec files
+!content/edits/**/*.md
+!content/edits/**/*.json
+!content/edits/**/*.txt
+
+# OS
+.DS_Store
+
+# Render intermediates (frames, thumbnails, working dirs)
+**/video-frames/
+**/work-*/
+**/.thumbnails/
+**/.waveform-cache/
+**/render-*.mp4
+**/render-*.mov
+content/edits/**/clip-*.mp4
+content/edits/**/clip-*.mov
+
+# Raw video clips (huge, regenerate from source)
+content/raw/**/*.mov
+content/raw/**/*.mp4
+content/raw/**/*.MOV
+content/raw/**/*.MP4
